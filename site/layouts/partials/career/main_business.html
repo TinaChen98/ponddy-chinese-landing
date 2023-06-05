@@ -1,0 +1,79 @@
+<section id="business">
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-centerr">
+            <div class="col-12">
+                <h1>{{.title}}</h1>
+            </div>
+            <div class="col-9">
+                <div class="desktop-product">
+                    <div class="p-box reader">
+                        <img data-src="https://dsjlafdgtbc6g.cloudfront.net/home/mac-reader.png" alt="Ponddy Reader" >
+                        <span>{{.reader}}</span>
+                    </div>
+                    <div class="p-box tutors">
+                        <img data-src="https://dsjlafdgtbc6g.cloudfront.net/home/mac-tutors.png" alt="Ponddy Tutors" >
+                        <span>{{.tutors}}</span>
+                    </div>
+                    <!-- <div class="p-box smart-textbooks">
+                        <img data-src="https://dsjlafdgtbc6g.cloudfront.net/home/mac-stb.png" alt="Ponddy Smart Textbooks" >
+                        <span>{{.smart_textbooks | safeHTML}}</span>
+                    </div> -->
+                    <div class="p-box dictionary">
+                        <div style="display: flex;justify-content: center;">
+                            <img data-src="https://dsjlafdgtbc6g.cloudfront.net/home/app-dictionary.png" alt="Ponddy Dictionary" >
+                        </div>
+                        <span>{{.dictionary | safeHTML}}</span>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </div>
+    <div class="mobile-product">
+        <div class="text-center p-box reader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 product-img">
+                        <a href="https://reader.ponddy.com" target="_blank">
+                            <img data-src="https://dsjlafdgtbc6g.cloudfront.net/home/mac-reader.png" alt="Ponddy Reader" >
+                        </a>
+                    </div>
+                    <div class="col-md-6 p-0 float-left product-content">
+                        <div class=" product-text">
+                            <span>{{.reader}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-box tutors">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="col-md-6 product-img float-right">
+                        <a href="https://tutors.ponddy.com" target="_blank">
+                            <img data-src="https://dsjlafdgtbc6g.cloudfront.net/home/mac-tutors.png" alt="Ponddy Tutors">
+                        </a>
+                    </div>
+                    <div class="col-md-6 p-0 product-content">
+                        <div class="float-right product-text">
+                            <span>{{.tutors}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-box smart-textbooks">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 product-img">
+                        <a href="https://stb.ponddy.com" target="_blank">
+                            <img data-src="https://dsjlafdgtbc6g.cloudfront.net/home/mac-stb.png" alt="Ponddy Smart Textbooks">
+                        </a>
+                    </div>
+                    <div class="col-md-6 p-0 product-content">
+                        <span class="product-text">{{.smart_textbooks_mobile}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

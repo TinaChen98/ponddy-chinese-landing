@@ -1,0 +1,25 @@
+<section id="reader" class="text-center product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 product-img">
+                <a href="{{.url}}" target="_blank">
+                    <img class="product-image" data-src="{{.image | absURL}}" alt="Ponddy Reader"></img>
+                </a>
+            </div>
+            <div class="col-md-6 p-0 float-left product-content">
+                <div class="product-text">
+                    <h1>{{.title}}</h1>
+                    <p>{{.description_title}}</p>
+                    <ul>
+                    {{ range .description }}
+                    <li>{{.text}}</li>
+                    {{end}}
+                    </ul>
+                    <a href="{{.url}}" target="_blank" class="product-link" data="reader">
+                        {{.button_text}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

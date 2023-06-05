@@ -1,0 +1,610 @@
+body {
+  font-family: 'proxima-nova', sans-serif;
+}
+
+h2 {
+  color: rgba(47, 62, 63, 0.8);
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.56;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: rgba(45, 54, 55, 0.5);
+}
+
+footer a {
+  font-weight: 300;
+  line-height: 2.33;
+  letter-spacing: 0.7px;
+  color: rgba(45, 54, 55, 0.5);
+}
+
+.navbar a {
+  color: rgba(29, 47, 51, 0.5);
+}
+
+.container .logo {
+  height: 32px;
+  margin: 8px 5rem 8px 0;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(82,191,215, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+
+#main {
+  margin-top: 57px;
+  background-color: #51c0d8;
+  height: 30vw;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 18rem;
+  }
+
+  to {
+    width: 40rem;
+  }
+}
+
+/* @keyframes typewriter{
+  9% {width: 18rem;}
+  18% {width: 19.8rem;}
+  27% {width: 21.5rem;}
+  36% {width: 23rem;}
+  45% {width: 24.7rem;}
+  54% {width: 26.4rem;}
+  63% {width: 27.6rem;}
+  72% {width: 28.3rem;}
+  81% {width: 30.1rem;}
+  90% {width: 31.6rem;}
+  100% {
+    max-width: 100%;
+    width: 40rem;
+  }
+} */
+
+#knowledge h2,
+#knowledge p {
+  color: #fff;
+}
+
+#knowledge p {
+  margin-top: 98px;
+  text-transform: capitalize;
+}
+
+#main .container p {
+  font-size: 2.5rem;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+#main .container .main-text {
+  font-family: Consolas, sans-serif;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  width: 40rem;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 2.5s steps(16) normal, blinkTextCursor 800ms steps(10) infinite normal;
+  border-right: 0.05em solid;
+}
+
+#main .container .main-text span {
+  font-weight: 600;
+}
+
+#main .main-imgs {
+  overflow: hidden;
+}
+
+#main .main-img1 {
+  position: relative;
+  z-index: 1;
+  top: 8px;
+  left: 3%;
+}
+
+#main .main-img2 {
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  left: 29%;
+}
+
+#main .main-img3 {
+  position: absolute;
+  z-index: 1;
+  right: 1%;
+}
+
+#who-we-are {
+  background: #edf1f5; /* Old browsers */
+  background: -moz-linear-gradient(top, #edf1f5 0%, #fff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #edf1f5 0%, #fff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #edf1f5 0%, #fff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+footer h5 {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.feature-box {
+  height: 100%;
+  box-shadow: 0 0 20px -10px #52bfd7;
+  background-image: linear-gradient(to bottom, #fff, #fdfeff);
+}
+
+.feature-box h5 {
+  line-height: 1.4;
+  letter-spacing: 0.9px;
+  color: rgba(45, 54, 55, 0.75);
+}
+
+.next-btn img {
+  transform: translate(-7.5px, 43.5px);
+}
+
+.prev-btn img {
+  transform: translate(7.5px, 43.5px);
+}
+
+footer .product-logo img {
+  margin: 40px 30px;
+}
+
+#ai {
+  background-color: #fff;
+}
+
+#ai img {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 100%;
+  max-width: 891px;
+  max-height: 462px;
+}
+
+#knowledge {
+  padding: 98px 0;
+  background-image: url(../images/bg-sb.png);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+#knowledge h2 {
+  text-transform: capitalize;
+}
+
+.product {
+  background-image: linear-gradient(to bottom, #52bfd7, #52bfd7);
+  background-size: 80vw 220px;
+  background-repeat: no-repeat;
+}
+
+.product h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #52bfd7;
+  text-transform: capitalize;
+}
+
+.product a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.product a::after {
+  content: '';
+  display: inline-block;
+  min-width: 8px;
+  min-height: 13px;
+  -webkit-mask-image: url(../images/arrow-min.png);
+  mask-image: url(../images/arrow-min.png);
+  background-color: #fff;
+  margin-left: 5px;
+}
+
+#tutors {
+  background-position: 0 5.7rem;
+}
+
+#reader {
+  background-position: 100% 5.7rem;
+}
+
+#smart-textbooks {
+  background-position: 0 8.7rem;
+}
+
+.custom-ctrl-btn {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  width: 63px;
+  height: 126px;
+  box-shadow: 0 0 25px -5px rgba(82, 191, 215, 0.4);
+}
+
+.next-btn {
+  border-radius: 0 100px 100px 0;
+  left: 0;
+  top: 170px;
+}
+
+.prev-btn {
+  border-radius: 100px 0 0 100px;
+  right: 0;
+  top: 170px;
+}
+
+.card-news {
+  box-shadow: 0 0 40px -5px rgba(82, 191, 215, 0.4);
+  background-color: #ffff;
+  margin: 20px auto;
+  max-width: 323px;
+  width: 323px;
+}
+
+.card-news .card-text {
+  height: 6.6rem;
+  max-height: 6.6rem;
+}
+
+.btn-ponddy {
+  border-radius: 23.4px;
+  border-color: #52bfd7;
+  color: #52bfd7 !important;
+  width: 60%;
+}
+
+.btn-ponddy:hover {
+  background-color: #52bfd7 !important;
+  color: #fff !important;
+}
+
+.circle-btn {
+  margin: 50px 4vw 20px 4vw;
+  display: inline-block;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  color: #fff;
+  background-color: #31a4b2;
+  border-radius: 50%;
+  padding: 1.3px 3.6px;
+  border: 2px solid #31a4b2;
+}
+
+.circle-btn:hover {
+  color: #31a4b2;
+  background-color: #fff;
+}
+
+.circle-btn a {
+  color: #fff;
+}
+
+footer {
+  background-color: #f8fafb;
+}
+
+.our-product {
+  color: #f7b605;
+}
+
+.work {
+  color: #45d8b8;
+}
+
+.resources {
+  color: #3cc8ff;
+}
+
+.terms-policies {
+  color: #6b44ff;
+}
+
+footer small {
+  font-weight: 300;
+  line-height: 2.33;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: rgba(45, 54, 55, 0.5);
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .product .product-img img {
+    width: 108%;
+  }
+
+  #main img {
+    max-width: 33vw;
+  }
+
+  .product p {
+    color: #fff;
+    font-size: 1.125rem;
+    line-height: 1.56;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.1rem;
+  }
+
+  #main .container p {
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+  }
+
+  #main .main-img2 {
+    max-width: 40vw;
+  }
+
+  #who-we-are {
+    padding-top: 30vw;
+  }
+
+  #tutors h1 {
+    text-align: left;
+  }
+
+  #reader h1 {
+    text-align: right;
+    margin-bottom: 0;
+  }
+
+  #tutors .product-text,
+  #reader .product-text {
+    width: 30vw;
+  }
+
+  #reader,
+  #smart-textbooks {
+    margin-top: 80px;
+  }
+
+  #smart-textbooks {
+    background-size: 100vw 220px;
+  }
+
+  #smart-textbooks .product-text {
+    width: unset;
+  }
+
+  #smart-textbooks h1 {
+    text-align: left;
+    width: 41vw;
+    margin-top: 21px;
+    margin-bottom: 15px;
+    line-height: 0.7;
+  }
+
+  #news {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  .product p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+  }
+
+  .product h1 {
+    margin-top: 30px;
+    font-size: 85px;
+    line-height: 0.75;
+  }
+
+  #reader p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+
+  #reader .product-text {
+    width: 29.5vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #who-we-are {
+    padding-top: 25vw;
+  }
+
+  #smart-textbooks h1 {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #main {
+    height: 50vw;
+  }
+
+  .product p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: rgba(45, 54, 55, 0.5);
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+  }
+
+  #smart-textbooks p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #main .container p {
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 8.3rem;
+    }
+
+    to {
+      width: 18.5rem;
+    }
+  }
+
+  #main .container .main-text {
+    font-size: 1.15rem;
+    width: 18.5rem;
+  }
+
+  .product-img img {
+    height: 45vw;
+  }
+
+  .next-btn img,
+  .prev-btn img {
+    width: 15px;
+    height: 24px;
+  }
+
+  .prev-btn img {
+    transform: translate(3.5px, 26.5px);
+  }
+
+  .next-btn img {
+    transform: translate(-3.5px, 26.5px);
+  }
+
+  #main img {
+    max-width: 50%;
+  }
+
+  #main .main-img1 {
+    z-index: 1;
+    top: 8px;
+    left: -8%;
+  }
+
+  #main .main-img2 {
+    max-width: 60%;
+    z-index: 2;
+    top: 35px;
+    left: 20%;
+  }
+
+  #main .main-img3 {
+    z-index: 1;
+    right: -13%;
+  }
+
+  #who-we-are {
+    padding-top: 50vw;
+  }
+
+  #tutors,
+  #reader {
+    background-size: 50vw 40vw;
+  }
+
+  #tutors {
+    background-position: 0 15vw;
+  }
+
+  #reader {
+    background-position: 100% 15vw;
+  }
+
+  #smart-textbooks {
+    background-size: 100vw 40vw;
+    background-position: 0 15vw;
+  }
+
+  .product-img {
+    height: 54.5vw;
+    position: relative;
+  }
+
+  .product h1 {
+    line-height: 11.9vw;
+    font-size: 16vw;
+  }
+
+  .product-content {
+    margin-bottom: 80px;
+  }
+
+  footer a {
+    font-size: 0.815rem;
+  }
+
+  .product a {
+    color: rgba(45, 54, 55, 0.5);
+  }
+
+  .product a::after {
+    background-color: rgba(45, 54, 55, 0.5);
+  }
+
+  .custom-ctrl-btn {
+    width: 39px;
+    height: 79px;
+  }
+
+  .next-btn,
+  .prev-btn {
+    top: 196px;
+  }
+
+  footer {
+    padding-top: 68px;
+  }
+
+  footer .product-logo {
+    display: none;
+  }
+}

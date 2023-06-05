@@ -1,0 +1,17 @@
+<section id="contact" class="text-center">
+    <div class="container-fluid">
+        <h2>{{.title}}</h2>
+        
+        <div class="row justify-content-center align-items-centerr">
+            {{ range .offices }}
+            <div class="col-md-3 col-6 office">
+                <h5>{{ .title }}</h5>
+                <p>{{ .address | safeHTML }}</p>
+                <p class="phone">{{ .phone | safeHTML }}</p>
+            </div>
+            {{ end }}
+        </div>
+
+        <a href="mailto:{{.gitmail}}" class="mail">{{.gitmail}}</a>
+    </div>
+</section>

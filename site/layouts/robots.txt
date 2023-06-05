@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /career/
+Allow: /tutors/
+Disallow: /admin/
+
+Sitemap: https://www.ponddy.ai/sitemap.xml
+Sitemap: https://tutors.ponddy.com/sitemap.xml

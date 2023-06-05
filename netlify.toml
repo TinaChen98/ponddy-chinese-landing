@@ -1,0 +1,20 @@
+[build]
+  command = "yarn build"
+  publish = "dist"
+[build.environment]
+  YARN_VERSION = "1.9.4"
+
+[context.deploy-preview]
+  command = "yarn build-preview"
+
+[[redirects]]
+  from = "/"
+  to = "https://chinese.ponddy.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/career/"
+  to = "https://chinese.ponddy.com/career/"
+  status = 301
+  force = true

@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <!--
+  __________
+ |\___    __\
+ \|___/\  \_|  ________   _________   ___   _____        ___     ___    ________
+      \ \  \  |\   ___ \ |\___   __\ |\  \ /__   \      |\  \   |\  \  |\   ____\
+       \ \  \ \ \  \_|\ \\|__|\  \_| \ \  \ __|\  \     \ \  \  \ \  \ \ \  \___|\
+        \ \  \ \ \  \ \\ \   \ \  \   \ \  \  \ \  \     \ \  \  \ \  \ \ \_____  \
+       __\_\  \ \ \  \_\\ \  _\ \  \__ \ \  \  \ \  \     \ \  \__\_\  \ \| ____|\ \
+      |\____ /|  \ \_______\|\________\ \ \__\  \ \__\     \ \__________\  |\_______\ 
+      \|_____|/   \|_______|\|________|  \|__|   \|__|      \|__________|  \|_______|@
+                                                                            
+
+                __________
+               |\    ___  \   ________   ___   _____   ______     ______     ___    ___
+               \ \   \_|\  \ |\   ___ \ |\  \ /__   \ |\   ___ ` |\   ___ ` |\  \ //  /    
+                \ \   ______\\ \  \_|\ \\ \  \ __|\  \\ \  \_/\ \\ \  \_/\ \\ \  \/  / 
+                 \ \  \_____| \ \  \ \\ \\ \  \  \ \  \\ \  \ \\ \\ \  \ \\ \\ \    /
+                  \ \  \       \ \  \_\\ \\ \  \  \ \  \\ \  \_/  \\ \  \_/  \\ \   \
+                   \ \__\       \ \_______\\ \__\  \ \__\\ \______/ \ \______/ \ \___\
+                    \|__|        \|_______| \|__|   \|__| \|_____|/  \|_____|/  \|___|
+  -->
+  <head>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+    <meta name="title" content="Ponddy Reader" />
+    <meta name="keywords" content="learning,education,ai,chinese,reader,ponddy" />
+    <meta name="description" content="Ponddy Reader makes authentic material comprehensible while minimizing class preparation time." />
+    <meta name="generator" content="Ponddy official website" />
+    <meta name="copyright" content="Ponddy Education Inc" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="classification" content="learning,chinese" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proxima+Nova">
+    <link rel="stylesheet" href="public/css/custom.css">
+    <link rel="shortcut icon" href="public/images/favicon.ico" />
+    <title>Ponddy - Reader</title>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-119490068-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-119490068-1');
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm fixed-top">
+        <div class="container">
+          <img class="logo" src="public/images/reader-logo.png">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample07">
+            <ul class="navbar-nav mr-auto text-center">
+              <li>
+              <a href="jacascript::void(0)" onClick="goHero()">
+                How it works
+              </a>
+            </li>
+            <li>
+              <a href="pricing.html">
+                Pricing
+              </a>
+            </li>
+            </ul>
+            <div class="action text-center">
+              <a class="button naked" href="https://auth.ponddy.com/auth/?client_id=2ecd2ce4-86a0-4e75-8548-e574d23f5731&redirect_uri=https://reader.ponddy.com/app/"
+              >Log in</a>
+              <a class="button outline" href="pricing.html"
+              onclick="gtag('event', 'view_item', {'event_category' : 'pricing','event_label' : 'landing nav sign up'})">
+                Sign up</a>
+              <a class="button naked" href="https://www.ponddy.ai/">
+                Ponddy
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+        <section class="hero">        
+          <div class="background"></div>
+          <div class="after-gradient"></div>
+
+          <div class="container-fluid">
+            <h1>Transform ANY Content Into Learning Materials</h1>
+            <p>Ponddy Reader makes authentic material comprehensible while minimizing class preparation time.</p>
+
+            <div class="row justify-content-center align-self-center">
+              <div class="col-md-6 buttonGroup">
+                <a href="https://auth.ponddy.com/auth/?client_id=2ecd2ce4-86a0-4e75-8548-e574d23f5731&redirect_uri=https://reader.ponddy.com/app/" class="button"
+                onClick="gtag('event', 'view_item', {'event_category' : 'sign_up','event_label' : 'landing'});" >
+                  Create a FREE account</a>
+                <a href="pricing.html" class="button"                 
+                onClick="gtag('event', 'view_promotion', {'event_category' : 'pricing','event_label' : 'landing'});" >
+                  Go Standard</a>
+              </div>
+
+              <div class="w-100"></div>
+
+              <div class="col-md-12 text-center">
+                <iframe src='http://videos.sproutvideo.com/embed/a09ddeb71d1ce7c628/b64eeb88fd1be758?playerTheme=dark&playerColor='
+                  frameborder='0' allowfullscreen>
+                </iframe>
+              </div>              
+            </div>
+          </div>
+        </section>
+      
+        <section class="content how-it-works">
+          <div class="container">  
+            <div class="row product">                      
+              <div class="col-md-6 product-pictures no-gutters">
+                <img src="public/images/mac.png" class="mac" id="mac">
+                <img src="public/images/i-phone-xs.png" srcset="public/images/i-phone-xs@2x.png 2x, public/images/i-phone-xs@3x.png 3x" class="iPhone-Xs">
+              </div>
+              <div class="col-md-6 description">
+                <h6>
+                  Classroom-Ready Content (Pondlets)
+                </h6>
+
+                <div class="icons">
+                  <img src="public/images/search-2.svg" class="search">
+                  <img src="public/images/pinyin.svg" class="pinyin">
+                  <img src="public/images/char-system.svg" class="char-system">
+                </div>
+
+                <p>
+                  Ponddy Reader converts any text into classroom-ready content (Pondlets) in seconds. Simply submit any text and Ponddy Reader will let you dynamically generate focused vocabulary and grammar lists with definitions, audio support, and sample sentences.
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-center align-self-center no-gutters">
+              <div class="col-md-12 features">
+                <img src="public/images/leveled-withshadow.gif">
+                <img src="public/images/pinyin-withshadow.gif">
+                <img src="public/images/TS-withshadow.gif">
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="tools">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+
+                <h1>Powerful Learning Tools</h1>                    
+                <p>By using powerful language scaffolding tools such as word, character and radical networks, students expand their vocabulary knowledge to produce sentences and improve reading comprehension.</p>
+                
+                <div class="wheel" #wheel>        
+                  <img src="public/images/dictionary.png" class="dictionary tool-animate" [class.topping]='featureHover(1)'>
+                  <img src="public/images/wordpond.png" class="wordpond tool-animate" [class.topping]='featureHover(2)'>
+                  <img src="public/images/characterpond.png" class="characterpond tool-animate" [class.topping]='featureHover(3)'>
+                  <img src="public/images/radical-pnod.png" class="radicalpond tool-animate" [class.topping]='featureHover(4)'>
+                </div>
+              
+              </div></div></div>
+
+              <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 text-center">
+                      
+                <div class="feature-boxes row">
+                  <div class="col-md-3 col-8">
+                  <div class="feature">
+                    <h1>Dictionary</h1>
+                    <p>Provides students with in-context definitions, pinyin, audio, and sample sentences at various levels.</p>
+                  </div>
+                  </div>
+
+                  <div class="col-md-3 col-8">
+                  <div class="feature">
+                    <h1>Word Pond</h1>
+                    <p>Learn words that often appear together. Through word associations, Word Pond helps students create sentences faster and easier.</p>
+                  </div>
+                  </div>
+
+                  <div class="col-md-3 col-8">
+                  <div class="feature">
+                    <h1>Character Pond</h1>
+                    <p>Learn words that share the same character. Character Pond helps students understand the meaning of characters and how they can combine to form words.</p>
+                  </div>
+                  </div>
+
+                  <div class="col-md-3 col-8">
+                  <div class="feature">
+                    <h1>Radical Pond</h1>
+                    <p>Learn words that share the same radical. Radical Pond animates the top 50 radicals to help students create characters.</p>
+                  </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="vocabulary">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                  <h1>Key Vocabulary</h1>
+                  <p>Key Vocabulary lets teachers create focused vocabulary lists for their students.</p>
+                  <img src="public/images/key-withshadow.gif" class="key-withshadow">
+                </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="share">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h1>Share Content</h1>
+                <p>Share links and QR codes to your leveled content with students and teachers.</p>
+                <img src="public/images/3.png" srcset="public/images/3@2x.png 2x, public/images/3@3x.png 3x" class="layer">
+              </div>              
+            </div>
+          </div>
+        </section>
+      
+        <section class="library">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center justify-content-center align-self-center">
+                <h1>Rich Library Resource</h1>
+                <p>Access over 400 classroom-ready lessons (Pondlets).</p>
+                
+                <div class="col-10 cards">
+                  <a href="https://reader.ponddy.com/app/#/reader-content/e329c2209bea55acc393aaf2304f05b8" target="_blank"
+                  onClick="gtag('event', 'view_item', {'event_category' : 'library_card','event_label' : 'landing'});" >
+                    <img src="public/images/card-2.png" class="card-2 card-animate">
+                  </a>
+                  <a href="https://reader.ponddy.com/app/#/reader-content/da4fe1d6caf47d79cdc1d624614a27db" target="_blank"
+                  onClick="gtag('event', 'view_item', {'event_category' : 'library_card','event_label' : 'landing'});" >
+                    <img src="public/images/card.png" class="card-1 card-animate">
+                  </a>
+                  <a href="https://reader.ponddy.com/app/#/reader-content/5367143a3ba9dbf2a5679cf98d0ca232" target="_blank"
+                  onClick="gtag('event', 'view_item', {'event_category' : 'library_card','event_label' : 'landing'});" >
+                    <img src="public/images/card-3.png" class="card-3 card-animate">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="charts">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h1>Align to International Standards</h1>
+                <p>Ponddy Level are aligned to national and international standards such as ACTFL, HSK, TOCFL, CEFR and ILR.</p>
+                
+                <div class="image-wrapper">
+                  <img src="public/images/level-chart.png" srcset="public/images/level-chart@2x.png 2x, public/images/level-chart@3x.png 3x"class="level-chart">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="reviews">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <h1>Customer review</h1>
+                
+                <div class="boxes row">
+
+                  <div class="review col-md-6">
+                    <p class="text">"As a teacher, I can choose appropriate articles and upload them onto Ponddy Reader to share with my students. I have students read the articles using the vocabulary and grammar assistance. Ponddy Reader helps my students to comprehend and read as much as possible!"</p>
+                    <div class="media">
+                      <img class="image mr-3" src="public/images/xin-chen.png">
+                      <div class="media-body">
+                        <span  class="school">Berkeley High School</span>
+                        <div>
+                          <span class="name">Xin Chen</span>
+                          <span class="title">#Teacher</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="review  col-md-6">
+                    <p class="text">"Ponddy Reader offers multiple levels for vocabulary words based on your personal proficiency. I can choose which levels to turn on so that I can recognize characters I know while at the same time learning new characters."</p>
+                    <div class="media">
+                      <img class="image mr-3" src="public/images/ava.png">
+                      <div class="media-body">
+                        <span class="school">Senior, Washington Latin Public Charter School, D.C</span>
+                        <div>
+                          <span class="name">Ava</span>
+                          <span class="title">#AP Chinese student</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="footer-hero">        
+          <div class="background">
+            <img src="public/images/7-cta.png" class="cta">
+          </div>
+
+          <div class="hero-content">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h1>All the LEVELED content you’ll ever need.</h1>                        
+                  <p>Your content, Shared Content and Ponddy Library give you all the content you’ll ever need.</p>
+                  
+                  <a href="https://auth.ponddy.com/auth/?client_id=2ecd2ce4-86a0-4e75-8548-e574d23f5731&redirect_uri=https://reader.ponddy.com/app/" class="button"
+                  onClick="gtag('event', 'view_item', {'event_category' : 'login','event_label' : 'landing'});" >
+                  HAVE A FREE TRIAL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center align-self-center no-gutters">
+          <div class="col-md-12 text-center pt-3 pb-3">
+            <a href="https://www.ponddy.ai/">
+              <img src="public/images/ponddy-logo.svg" class="product-logo">
+            </a>
+
+            <a href="https://stb.ponddy.com/">
+              <img src="public/images/textbook-logo.svg" class="product-logo">
+            </a>
+
+            <a href="http://www.ponddytutors.com/">
+              <img src="public/images/tutors-logo.svg" class="product-logo">
+            </a>
+          </div>
+
+          <div class="w-100"></div>
+
+          <div class="navigation justify-content-center align-self-center">
+            <ul>
+              <li>
+                <a href="https://www.ponddy.ai/">Ponddy</a>
+              </li>
+              <li>
+                <a href="jacascript::void(0)" onClick="goHero()">
+                  How it works
+                </a>
+              </li>
+              <li>
+                <a href="pricing.html">Pricing</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-12">
+            <div class="copyright">
+              © Copyright 2015 - 2018 | Ponddy Education Inc. | All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="scroll-up-arrow">
+      <img alt="scroll-up" src="public/images/scroll-up-arrow.png">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <script src="public/js/custom.js"></script>
+    <script src="public/js/index-animation.js"></script>
+  </body>
+</html>

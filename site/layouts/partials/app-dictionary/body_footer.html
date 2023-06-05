@@ -1,0 +1,78 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 product-logo text-center">
+                {{ range .products_icon }}
+                <a href="{{.url}}" target="_blank">
+                    <img class="product-logo" data-src="{{.image | absURL}}" alt="{{.alt}}" title="{{.alt}}">
+                </a>
+                {{ end }}
+            </div>
+            <div class="col-md-3 col-6">
+                <h5 class="our-product">{{ .our_products.title }}</h5>
+                <ul class="list-unstyled text-small">
+                    {{ range .our_products.links }}
+                    <li>
+                        <a href="{{ .url }}" target="_blank">
+                            {{ .title }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col-md-3 col-6">
+                <h5 class="work">{{ .work.title }}</h5>
+                <ul class="list-unstyled text-small">
+                    {{ range .work.links}}
+                    <li>
+                        <a id="{{.id}}" href="{{ .url }}" >
+                            {{ .title }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col-md-3 col-6">
+                <h5 class="resources">{{ .resources.title }}</h5>
+                <ul class="list-unstyled text-small">
+                    {{ range .resources.links}}
+                    <li>
+                        <a href="{{ .url }}">
+                            {{ .title }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col-md-3 col-6">
+                <h5 class="terms-policies">{{ .tnp.title }}</h5>
+                <ul class="list-unstyled text-small">
+                    {{ range .tnp.links}}
+                    <li>
+                        <a href="{{ .url }}" target="_blank">
+                            {{ .title }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col-md-12 text-center pt-5 pb-2">
+                <p class="mb-3 copyright">
+                    <a href="https://s3-us-west-1.amazonaws.com/ponddyreader-master/legal_documents/terms.html" target="_blank" class="">
+                        Terms
+                    </a>
+                    |
+                    <a href="https://s3-us-west-1.amazonaws.com/ponddyreader-master/legal_documents/privacy.html" target="_blank">
+                        Privacy
+                    </a>
+                    |
+                    {{ .copyright | safeHTML }}
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="scroll-up-arrow">
+    <img alt="scroll-up" data-src="{{.topup_arrow | absURL }}">
+</div>

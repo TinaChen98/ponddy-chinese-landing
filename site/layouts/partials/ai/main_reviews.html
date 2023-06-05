@@ -1,0 +1,26 @@
+<section class="reviews">
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>{{.title}}</h2>
+                <div class="boxes row">
+                    {{ range .reviews }}
+                    <div class="col-md-6">
+                        <div class="review">
+                            <p class="text">{{.text}}</p>
+                            <div class="media">
+                                <div class="media-body">
+                                    <span class="school">{{.school}}</span>
+                                    <div>
+                                        <span class="name">{{.name}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

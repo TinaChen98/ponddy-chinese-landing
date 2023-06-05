@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53 (72520) - https://sketchapp.com -->
+    <title>404D88AE-EB2D-42A6-BB26-08DEB562F38E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="32.6869333%" x2="50%" y2="96.4258523%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#ECF1F5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="375" height="48"></rect>
+        <filter x="-1.5%" y="-11.5%" width="102.9%" height="145.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="6" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="13" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0360503183   0 0 0 0 0.434675132   0 0 0 0 0.665205145  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="ponddy.ai" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ponddy_menu" transform="translate(-287.000000, -80.000000)" fill-rule="nonzero">
+            <g id="navbar" transform="translate(0.000000, 73.000000)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill-opacity="0.9" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-2"></use>
+                </g>
+                <g id="menu-n" transform="translate(286.932422, 7.000000)">
+                    <path d="M6.06757811,4.5 L24.0675781,4.5" id="Line-2" stroke="#3FB2D1" stroke-width="2.5" stroke-linecap="round"></path>
+                    <path d="M6.06757811,11 L24.0675781,11" id="Line-2-Copy" stroke="#3FB2D1" stroke-width="2.5" stroke-linecap="round"></path>
+                    <path d="M6.06757811,17.5 L24.0675781,17.5" id="Line-2-Copy-2" stroke="#3FB2D1" stroke-width="2.5" stroke-linecap="round"></path>
+                    <path d="M5,27 L5,21.6640625 L5.94921875,21.6640625 L7.61328125,25.7773438 L9.26953125,21.6640625 L10.2226562,21.6640625 L10.2226562,27 L9.55859375,27 L9.55859375,22.5117188 L7.75,27 L7.48046875,27 L5.6640625,22.5117188 L5.6640625,27 L5,27 Z M11.16875,27 L11.16875,21.6640625 L14.6648437,21.6640625 L14.6648437,22.2578125 L11.8328125,22.2578125 L11.8328125,23.9765625 L14.60625,23.9765625 L14.60625,24.5664062 L11.8328125,24.5664062 L11.8328125,26.40625 L14.6648437,26.40625 L14.6648437,27 L11.16875,27 Z M15.4195312,27 L15.4195312,21.6640625 L16.0992187,21.6640625 L19.1695312,25.8320312 L19.1695312,21.6640625 L19.8335937,21.6640625 L19.8335937,27 L19.1929687,27 L16.0835937,22.7421875 L16.0835937,27 L15.4195312,27 Z M20.7796875,24.9296875 L20.7796875,21.6640625 L21.4515625,21.6640625 L21.4515625,24.9101562 C21.4515625,25.4075546 21.5811185,25.7975246 21.8402343,26.0800781 C22.0993502,26.3626316 22.4710913,26.5039062 22.9554687,26.5039062 C23.4398461,26.5039062 23.8128893,26.3619806 24.0746093,26.078125 C24.3363294,25.7942694 24.4671875,25.4049504 24.4671875,24.9101562 L24.4671875,21.6640625 L25.1390625,21.6640625 L25.1390625,24.921875 C25.1390625,25.6015659 24.9528664,26.1341127 24.5804687,26.5195312 C24.208071,26.9049498 23.6664098,27.0976562 22.9554687,27.0976562 C22.249736,27.0976562 21.7106789,26.9042988 21.3382812,26.5175781 C20.9658835,26.1308574 20.7796875,25.6015659 20.7796875,24.9296875 Z" id="MENU" fill="#3FB2D1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

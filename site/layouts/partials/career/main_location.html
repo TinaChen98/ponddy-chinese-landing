@@ -1,0 +1,106 @@
+<section id="location">
+    <div class="container">
+        <h1>
+            {{.title}}
+        </h1>
+        <p></p>
+        <div class="loc-filter owl-carousel owl-theme">
+            <div class="item choose" id="sanjose" data="sanjose-job" owl-target=0>
+                <div class="loc-box card" >
+                    <img class="card-img-top location-image" data-src="https://dsjlafdgtbc6g.cloudfront.net/career/sanjose.png" alt="{{.sanjose}}" title="{{.sanjose}}" />
+                    <div class="card-body">
+                        <h3>{{.sanjose}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item" id="taipei" data="taipei-job" owl-target=1>
+                <div class="loc-box card">
+                    <img class="card-img-top location-image" data-src="https://dsjlafdgtbc6g.cloudfront.net/career/taipei.png" alt="{{.taipei}}" title="{{.taipei}}" />
+                    <div class="card-body">
+                        <h3>{{.taipei}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item" id="tientsin" data="tientsin-job" owl-target=2>
+                <div class="loc-box card">
+                    <img class="card-img-top location-image" data-src="https://dsjlafdgtbc6g.cloudfront.net/career/rectangle-copy-7.png" alt="{{.tientsin}}" title="{{.tientsin}}" />
+                    <div class="card-body">
+                        <h3>{{.tientsin}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="jobs"></div>
+        <div class="row jobs" id="sanjose-job">
+            {{ range .sanjose_jobs }}
+            <div class="col-md-12 job" data="{{.mapping}}">
+                <h4 data="{{.mapping}}">{{.title}}</h4>
+                <p data="{{.mapping}}">{{.abstract}}</p>
+                <span data="{{.mapping}}">{{.location}}</span>
+            </div>
+            {{ end }}
+        </div>
+        <div class="row jobs"  id="taipei-job">
+            {{ range .taipei_jobs }}
+            <div class="col-md-12 job" data="{{.mapping}}">
+                <h4 data="{{.mapping}}">{{.title}}</h4>
+                <p data="{{.mapping}}">{{.abstract}}</p>
+                <span data="{{.mapping}}">{{.location}}</span>
+            </div>
+            {{ end }}
+        </div>
+        <div class="row jobs" id="tientsin-job">
+            {{ range .tientsin_jobs }}
+            <div class="col-md-12 job" data="{{.mapping}}">
+                <h4 data="{{.mapping}}">{{.title}}</h4>
+                <p data="{{.mapping}}">{{.abstract}}</p>
+                <span data="{{.mapping}}">{{.location}}</span>
+            </div>
+            {{ end }}
+        </div>
+
+        <div class="row justify-content-center">
+            {{ range .job }}
+            <div class="col-md-9 job-detail" id="{{.id}}">
+                <div class="row no-gutters back">
+                    <a href="jacascript::void(0)">Back</a>
+                </div>
+                <h2>{{.title}}</h2>
+                <div>
+                    <span class="d-inline location"></span>
+                    <p class="d-inline align-top">{{.location}}</p>
+                </div>
+                <br/>
+                <br/>
+                <h4>{{.about_title}}</h4>
+                <p>{{.about | safeHTML}}</p>
+                <div class="mt-58"></div>
+                <hr/>
+                <br/>
+                <h4>{{.duties_title}}</h4>
+                <p>{{.duties | safeHTML}}</p>
+                <div class="mt-58"></div>
+                <h4>{{.qualifications_title}}</h4>
+                <p>{{.qualifications | safeHTML}}</p>
+                <br/>
+                <h4>{{.education}}</h4>
+                <h4>{{.experience}}</h4>
+                <h4>{{.salary}}</h4>
+                <h4>{{.workhour}}</h4>
+                <h4>{{.companyname}}</h4>
+                <h4>{{.companylocation}}</h4>
+                <h4>{{.peoplenum}}</h4>
+                <h4>{{.contact}}</h4>
+                <h4>{{.holidaypolicy | safeHTML}}</h4>
+                <p>{{.applyform | safeHTML}}</p>
+                <hr/>
+                <br/>
+                <h4>{{.benifits_title}}</h4>
+                <p>{{.benifits | safeHTML}}</p>
+                <div class="mt-58"></div>
+
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,497 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 product-logo text-center">
+                {{ range .products_icon }}
+                <a href="{{.url}}" target="_blank">
+                    <img class="product-logo" data-src="{{.image | absURL}}" alt="{{.alt}}" title="{{.alt}}">
+                </a>
+                {{ end }}
+            </div>
+            <div class="col-md-3 col-6">
+                <h5 class="our-product">{{ .our_products.title }}</h5>
+                <ul class="list-unstyled text-small">
+                    {{ range .our_products.links }}
+                    <li>
+                        <a href="{{ .url }}" target="_blank">
+                            {{ .title }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col-md-3 col-6">
+                <h5 class="work">{{ .work.title }}</h5>
+                <ul class="list-unstyled text-small">
+                    {{ range .work.links}}
+                    <li>
+                        <a href="{{ .url }}">
+                            {{ .title }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col-md-3 col-6">
+                <h5 class="resources">{{ .resources.title }}</h5>
+                <ul class="list-unstyled text-small">
+                    {{ range .resources.links}}
+                    <li>
+                        <a href="{{ .url }}">
+                            {{ .title }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col-md-3 col-6">
+                <h5 class="terms-policies">{{ .tnp.title }}</h5>
+                <ul class="list-unstyled text-small">
+                    {{ range .tnp.links}}
+                    <li>
+                        <a href="{{ .url }}" target="_blank">
+                            {{ .title }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col-md-12 text-center pt-5 pb-2">
+                <p class="mb-3 copyright">
+                    <a href="https://s3-us-west-1.amazonaws.com/ponddyreader-master/legal_documents/terms.html" target="_blank" class="">
+                        Terms
+                    </a>
+                    |
+                    <a href="https://s3-us-west-1.amazonaws.com/ponddyreader-master/legal_documents/privacy.html" target="_blank">
+                        Privacy
+                    </a>
+                    |
+                    {{ .copyright | safeHTML }}
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="scroll-up-arrow">
+    <img alt="scroll-up" data-src="{{.topup_arrow | absURL }}">
+</div>
+<script type="application/ld+json">
+    [{
+        "datePosted": "2019-04-23",
+        "description": "1. 負責龎帝線上教學平台的前端維護工作。
+        2. 負責設計或協助開發公司新研發商品的前端需求。
+        3. 依據需求設計及建立 mockups 供後續討論。
+        4. 協助龎帝各平台產品前端設計、開發、維護和專案管理工作。
+        5. 協同後端工程師設計 API 並配合開發 與使用者、教學設計專家、教師、產品設計師、後端工程師等一起探討、設計並實現新世代語言教學產品應該具備的各項功能。
+        6. 透過數據及各種可及的回饋，快速迭代調整改善產品運作及維護端的效率及品質。
+        7. 與各國團隊協調溝通，共同達成任務。",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "龎帝數位資訊有限公司",
+          "sameAs": "www.ponddy.ai/career/",
+          "logo": "https://dsjlafdgtbc6g.cloudfront.net/footer/ponddy-logo.svg"
+        },
+        "jobLocation": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "民權路108號",
+                "addressLocality": "新北市新店區",
+                "addressRegion": "台灣",
+                "postalCode": "231",
+                "addressCountry": "TW"
+            }
+        },
+        "title":"前端工程師",
+        "baseSalary": {
+            "@type": "MonetaryAmount",
+            "currency": "NTD",
+            "value": {
+                "@type": "QuantitativeValue",
+                "minValue": 55000,
+                "maxValue": 75000,
+                "unitText": "MONTH"
+            }
+        },
+        "employmentType": ["FULL_TIME"],        
+        "@context": "http://schema.org",
+        "@type": "JobPosting",        
+        "educationRequirements": "專科、大學、碩士、博士",
+        "experienceRequirements": "不拘",        
+        "industry": "數位學習產業",
+        "salaryCurrency": "NTD",        
+        "qualifications": "1. 能力：
+        熟悉一種 front-end framework (React, Vue.js, AngularJS...etc)；
+        熟悉 Javascript, 善於使用 jQuery 及 jQuery Plugins, AJAX 前後端整合；
+        熟悉 HTML, SCSS, RWD, Bootstrap；
+        熟悉 build tools (Gulp, Webpack...etc)；
+        熟悉 Git 與 Git flow。
+        2. 加分項目：
+        熟悉 AngularJS 尤佳；
+        具備良好 RESTful API 實務經驗；
+        UI/UX 實務經驗及作品；
+        使用雲端平台經驗 (AWS/Azure/GCP)；
+        AWS 佈署，效能調校經驗；
+        具備跨平台、跨瀏覽器問題解決能力；
+        具備測試 (自動化) 及 CI/CD 實務經驗；
+        具備敏捷開發方法實務經驗；
+        Web 相關專案 / 社群參與開發的經驗及成果；
+        其他有助於團隊共同開發之能力 (例如溝通能力、自主學習能力、指導後學以及帶領團隊的經驗)。",
+        "skills": "
+        1. 熟悉一種 front-end framework (React, Vue.js, AngularJS...etc)。
+        2. 熟悉 Javascript, 善於使用 jQuery 及 jQuery Plugins, AJAX 前後端整合。
+        3. 熟悉 HTML, SCSS, RWD, Bootstrap。
+        4. 熟悉 build tools (Gulp, Webpack...etc)。
+        5. 熟悉 Git 與 Git flow。",
+        "specialCommitments": "不拘"
+    },{
+        "datePosted": "2019-04-23",
+        "description": "1. 負責龎帝線上教學平台的測試、文件製作及部分功能開發。
+        2. 負責教學相關資源資料維護、後台系統的功能維護及改善。
+        3. 協助龎帝各平台產品後端設計、開發、維護和專案管理工作。
+        4. 協助軟體開發規劃，包含軟體系統架構分析與資料庫設計。
+        6. 與使用者、教學設計專家、教師、產品設計師、前端工程師等一起探討、設計並實現新世代教學產品應該具備的各項功能。
+        7. 透過數據及各種可及的回饋，快速迭代調整改善產品運作及維護端的效率及品質。
+        8. 與各國團隊協調溝通，共同達成任務。",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "龎帝數位資訊有限公司",
+          "sameAs": "www.ponddy.ai/career/",
+          "logo": "https://dsjlafdgtbc6g.cloudfront.net/footer/ponddy-logo.svg"
+        },
+        "jobLocation": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "民權路108號",
+                "addressLocality": "新北市新店區",
+                "addressRegion": "台灣",
+                "postalCode": "231",
+                "addressCountry": "TW"
+            }
+        },
+        "title":"後端工程師",
+        "baseSalary": {
+            "@type": "MonetaryAmount",
+            "currency": "NTD",
+            "value": {
+                "@type": "QuantitativeValue",
+                "minValue": 55000,
+                "maxValue": 70000,
+                "unitText": "MONTH"
+            }
+        },
+        "employmentType": ["FULL_TIME"],        
+        "@context": "http://schema.org",
+        "@type": "JobPosting",        
+        "educationRequirements": "專科、大學、碩士、博士",
+        "experienceRequirements": "不拘",        
+        "industry": "數位學習產業",
+        "salaryCurrency": "NTD",        
+        "qualifications": "1. 能力：
+        熟悉 Python, 使用過 Python web framework (Django/Flask)；
+        熟悉 Linux 指令與操作；
+        熟悉資料庫架構規劃與 ORM 開發；
+        熟悉 SQL Database (MySQL/MariaDB/PostgreSQL)；
+        熟悉 Git 與 Git flow。
+        2. 加分項目：
+        使用雲端平台經驗 (AWS/Azure/GCP)；
+        RESTful API 實務經驗；
+        具備 (自動) 測試及 CI/CD 實務經驗；
+        SEO 實務經驗；
+        具自然語言處理 (Natural Language Processing, NLP) 實務經驗或作品；
+        對機器學習、深度學習、人工智慧有興趣、或具開發經驗；
+        具備系統分析與軟體架構設計經驗，DevOps 實務經驗，可獨當一面進行系統設計開發至上線運作階段；
+        Web 相關專案 / 社群參與開發的經驗及成果；
+        具備敏捷開發方法實務經驗；
+        其他有助於團隊共同開發之能力 (例如溝通能力、自主學習能力、指導後學以及帶領團隊的經驗)。",
+        "skills": "
+        1. 熟悉 Python, 使用過 Python web framework (Django/Flask)。
+        2. 熟悉 Linux 指令與操作。
+        3. 熟悉資料庫架構規劃與 ORM 開發。
+        4. 熟悉 SQL Database (MySQL/MariaDB/PostgreSQL)。
+        5. 熟悉 Git 與 Git flow。",
+        "specialCommitments": "不拘"
+    },{
+        "datePosted": "2019-04-23",
+        "description": "1. 透過電話或郵件方式，持續追蹤、經營並維護既有的客戶。
+        2. 提供客戶諮詢服務、產品解說，並適時進行產品推廣及行銷。
+        3. 協助客戶簽約流程、後續服務。
+        4. 行銷整合規劃及建議。
+        5. 建立、紀錄並維護客戶資料。
+        6. 可使用簡單英文與客戶溝通並解決客戶問題。
+        7. 其他主管交辦事項及行政相關事項。
+        8. 支援簡單客服。",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "龎帝數位資訊有限公司",
+          "sameAs": "www.ponddy.ai/career/",
+          "logo": "https://dsjlafdgtbc6g.cloudfront.net/footer/ponddy-logo.svg"
+        },
+        "jobLocation": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "民權路108號",
+                "addressLocality": "新北市新店區",
+                "addressRegion": "台灣",
+                "postalCode": "231",
+                "addressCountry": "TW"
+            }
+        },
+        "title":"行銷業務專員",
+        "baseSalary": {
+            "@type": "MonetaryAmount",
+            "currency": "NTD",
+            "value": {
+                "@type": "QuantitativeValue",
+                "minValue": 28000,
+                "maxValue": 40000,
+                "unitText": "MONTH"
+            }
+        },
+        "employmentType": ["FULL_TIME"],        
+        "@context": "http://schema.org",
+        "@type": "JobPosting",        
+        "educationRequirements": "專科、大學、碩士、博士",
+        "experienceRequirements": "不拘",        
+        "industry": "數位學習產業",
+        "salaryCurrency": "NTD",        
+        "qualifications": "1. 有業務、行銷經驗尤佳。
+        2. 善於交際、頭腦靈活、細心負責、有耐心、口條俐落、活潑大方 。
+        3. 熟悉使用 Google Doc 或 Microsoft Office 軟體
+        4. 多益 750 以上",
+        "skills": "1. 有業務、行銷經驗尤佳。 
+        2. 善於交際、頭腦靈活、細心負責、有耐心、口條俐落、活潑大方 。 
+        3. 熟悉使用 Google Doc 或 Microsoft Office 軟體 ",
+        "specialCommitments": "不拘"
+    },{
+        "datePosted": "2019-04-23",
+        "description": "1. Web/App 介面設計：熟悉設計討論及執行 Wireframe、Mockup 繪製、Guideline 設計 、RWD 網頁編排。 
+        2. 原型設計：Prototype 設計。 
+        3. 視覺設計：色彩計畫、Icon、插畫及介面元件繪製及排版。 
+        4. 平面設計：海報、DM、活動文宣、包裝設計、學習單。 ",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "龎帝數位資訊有限公司",
+          "sameAs": "www.ponddy.ai/career/",
+          "logo": "https://dsjlafdgtbc6g.cloudfront.net/footer/ponddy-logo.svg"
+        },
+        "jobLocation": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "民權路108號",
+                "addressLocality": "新北市新店區",
+                "addressRegion": "台灣",
+                "postalCode": "231",
+                "addressCountry": "TW"
+            }
+        },
+        "title":"UI 設計師",
+        "baseSalary": {
+            "@type": "MonetaryAmount",
+            "currency": "NTD",
+            "value": {
+                "@type": "QuantitativeValue",
+                "minValue": 40000,
+                "maxValue": 65000,
+                "unitText": "MONTH"
+            }
+        },
+        "employmentType": ["FULL_TIME"],        
+        "@context": "http://schema.org",
+        "@type": "JobPosting",        
+        "educationRequirements": "專科、大學、碩士",
+        "experienceRequirements": "3 年以上",        
+        "industry": "數位學習產業",
+        "salaryCurrency": "NTD",        
+        "qualifications": "1. 軟體實作：熟悉 Photoshop、Illustrator、Sketch、Zeplin。 
+        2. 作品集：UI/UX 專案、平面廣告設計、Guideline 相關作品。 
+        3. 實作經驗：一年以上互動設計經驗，UI/UX 設計經驗 1 年以上優先。 
+        4. 獨立作業：熟悉 UI/UX 設計相關理論、工具及方法，能獨立將作品以簡報呈現交互設計報告。 
+        5. 溝通能力：具有良好的跨團隊溝通能力，並能與專案相關人員密切合作完成產品開發。",
+        "skills": "1. 軟體實作：熟悉 Photoshop、Illustrator、Sketch、Zeplin。 
+        2. 作品集：UI/UX 專案、平面廣告設計、Guideline 相關作品。 
+        3. 實作經驗：一年以上互動設計經驗，UI/UX 設計經驗 1 年以上優先。 
+        4. 獨立作業：熟悉 UI/UX 設計相關理論、工具及方法，能獨立將作品以簡報呈現交互設計報告。 
+        5. 溝通能力：具有良好的跨團隊溝通能力，並能與專案相關人員密切合作完成產品開發。",
+        "specialCommitments": "不拘"
+    },{
+        "datePosted": "2019-04-23",
+        "description": "1. 課程與教學品質監督和提升。 
+        2. 線上課程與學習者分析及評估。 
+        3. 協助教學設計相關材料開發和維護。 
+        4. 協助提供課程相關之諮詢服務。 
+        5. 支援線上教學。 
+        6. 教務相關工作。 
+        7. 跨部門支援和主管交辦事項。 ",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "龎帝數位資訊有限公司",
+          "sameAs": "www.ponddy.ai/career/",
+          "logo": "https://dsjlafdgtbc6g.cloudfront.net/footer/ponddy-logo.svg"
+        },
+        "jobLocation": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "民權路108號",
+                "addressLocality": "新北市新店區",
+                "addressRegion": "台灣",
+                "postalCode": "231",
+                "addressCountry": "TW"
+            }
+        },
+        "title":"華語教學教務專員",
+        "baseSalary": {
+            "@type": "MonetaryAmount",
+            "currency": "NTD",
+            "value": {
+                "@type": "QuantitativeValue",
+                "minValue": 28000,
+                "maxValue": 40000,
+                "unitText": "MONTH"
+            }
+        },
+        "employmentType": ["FULL_TIME"],        
+        "@context": "http://schema.org",
+        "@type": "JobPosting",        
+        "educationRequirements": "大學、碩士",
+        "experienceRequirements": "不拘",        
+        "industry": "數位學習產業",
+        "salaryCurrency": "NTD",        
+        "qualifications": "
+        1. 華語文教學相關研究所畢業尤佳 
+        2. 具有 3 年以上華語教學經驗者優先安排面試。 
+        3. 具有對外華語師資相關證照者尤佳 
+        4. 具有線上華語文教學經驗或接受過相關培訓者尤佳 
+        5. 與其他部門溝通協調的能力 
+        6. 獨立作業能力 
+        7. 對輔導全球中文教學普及化有熱忱 
+        8. 語言條件：具備第二外語能力尤佳",
+        "specialCommitments": "不拘"
+    },{
+        "datePosted": "2019-04-23",
+        "description": "1. 負責與電子學習平台所需之華語文教材研發及編審。 
+        2. 與教材相關之電子資料庫內容開發。 
+        3. 能夠進行線上華語教學及支援相關之事務。 
+        4. 協助公司行政相關業務。",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "龎帝數位資訊有限公司",
+          "sameAs": "www.ponddy.ai/career/",
+          "logo": "https://dsjlafdgtbc6g.cloudfront.net/footer/ponddy-logo.svg"
+        },
+        "jobLocation": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "民權路108號",
+                "addressLocality": "新北市新店區",
+                "addressRegion": "台灣",
+                "postalCode": "231",
+                "addressCountry": "TW"
+            }
+        },
+        "title":"華語文教材編寫研發專員",
+        "baseSalary": {
+            "@type": "MonetaryAmount",
+            "currency": "NTD",
+            "value": {
+                "@type": "QuantitativeValue",
+                "minValue": 28000,
+                "maxValue": 40000,
+                "unitText": "MONTH"
+            }
+        },
+        "employmentType": ["FULL_TIME"],        
+        "@context": "http://schema.org",
+        "@type": "JobPosting",        
+        "educationRequirements": "碩士、博士",
+        "experienceRequirements": "不拘",        
+        "industry": "數位學習產業",
+        "salaryCurrency": "NTD",        
+        "qualifications": "
+        1. 具有對外華語師資證照者尤佳。
+        2. 學歷：華語文教學相關研究所畢業 (大學中文科系尤佳)。
+        3. 具有線上華語文教學經驗或接受過相關培訓者尤佳。
+        4. 與其他部門溝通協調的能力。
+        5. 獨立作業能力。
+        6. 對輔導全球中文教學普及化有熱忱。",
+        "specialCommitments": "不拘"
+    },{
+        "datePosted": "2019-04-23",
+        "description": "Develop and build the base AI and machine learning technologies for company’s platform. Create personalized language learning solutions for both Chinese and English learners. Leverage AI and NLP technologies, which include Chinese word segmentation, Chinese grammar extraction, text summarization, and context relevant content retrieval, to create contents and optimal learning plans for Chinese language learners. Plan, design, implement and integrate each component of the AI engine. Debug, test and maintain the backend system and APIs. Collect and build data corpora for AI system.",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Ponddy Education Inc.",
+          "sameAs": "www.ponddy.ai/career/",
+          "logo": "https://dsjlafdgtbc6g.cloudfront.net/footer/ponddy-logo.svg"
+        },
+        "jobLocation": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1550 The Alameda",
+                "addressLocality": ", San Jose",
+                "addressRegion": "CA",
+                "postalCode": "95126",
+                "addressCountry": "US"
+            }
+        },
+        "title":"Software Engineer",
+        "baseSalary": {
+            "@type": "MonetaryAmount",
+            "currency": "USD",
+            "value": {
+                "@type": "QuantitativeValue",
+                "unitText": "MONTH"
+            }
+        },
+        "employmentType": ["FULL_TIME"],        
+        "@context": "http://schema.org",
+        "@type": "JobPosting",    
+        "industry": "e-learning",
+        "salaryCurrency": "USD",        
+        "qualifications": "Master’s degree in Computer Science and one year of experience in Natural Language Processing and Machine Learning; Java or Python, Shell, JavaScript coding skills; experience with context-relevant NLP tasks in English and Chinese; knowledge of neural networks; experience in designing an NLP system in production quality that can disambiguate semantic meanings in Mandarin Chinese; experience in tools including the Linux OS, Git version control, Amazon Web Service, and the following Python Toolkits: Numpy, Keras, Tensor Flow and Scikit-learn.",
+        "specialCommitments": "none"
+    },{
+        "datePosted": "2019-04-23",
+        "description": "Create and implement effective visuals for our print and digital marketing materials. The candidate will work closely with our sales and marketing teams to produce a wide range of design materials such as advertising, brochures and promotional materials. The candidate must have a good graphic sense and demonstrate a strong knowledge of best practices and industry-standard software. Be able to operate with a clear and effective communicator in both spoken and written English and Chinese. Motivated, reliable, thorough, and excited about developing, designing, refining and implementing print and digital marketing materials for company products. The candidate will work with our marketing team to develop and maintain our web content, digital marketing materials. The work schedule for this position is negotiable, but is expected to consist of two days weekly.",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Ponddy Education Inc.",
+          "sameAs": "www.ponddy.ai/career/",
+          "logo": "https://dsjlafdgtbc6g.cloudfront.net/footer/ponddy-logo.svg"
+        },
+        "jobLocation": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1550 The Alameda",
+                "addressLocality": ", San Jose",
+                "addressRegion": "CA",
+                "postalCode": "95126",
+                "addressCountry": "US"
+            }
+        },
+        "title":"Part-Time Graphic / Web Designer",
+        "baseSalary": {
+            "@type": "MonetaryAmount",
+            "currency": "USD",
+            "value": {
+                "@type": "QuantitativeValue",
+                "unitText": "HOUR"
+            }
+        },
+        "employmentType": ["PART_TIME"],        
+        "@context": "http://schema.org",
+        "@type": "JobPosting",    
+        "industry": "e-learning",
+        "salaryCurrency": "USD",        
+        "qualifications": "Bachelors or equivalent degree in Graphic Design or related; 2+ years of work experience in a related field. Proficiency working in Adobe Creative Suite (Illustrator, Photoshop, and InDesign). Experience in creating visuals for Western markets. Proficiency in English and Chinese. Experience with video editing is a plus. Familiarity with HTML/CSS/Javascript is a plus.",
+        "specialCommitments": "none"
+    }]
+</script>

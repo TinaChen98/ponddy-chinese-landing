@@ -1,0 +1,18 @@
+<section id="smart-textbooks" class="text-center product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 product-img">
+                <a href="{{.url}}" target="_blank">
+                    <img class="product-image" data-src="{{.image | absURL}}" alt="Ponddy Smart Textbooks"></img>
+                </a>
+            </div>
+            <div class="col-md-6 p-0 product-content">
+                <h1 class="product-text">{{.title}}</h1>
+                <p class="product-text">{{.description}}</p>
+                <div onclick="window.open('https://stb.ponddy.com/')" class="product-link url" data="smart-textbooks">
+                    {{.button_text}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

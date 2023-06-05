@@ -1,0 +1,1078 @@
+backend:
+  name: git-gateway
+
+media_folder: "site/static/public/images" # Folder where user uploaded files should go
+public_folder: "/public/images"
+
+editor:
+  preview: false
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "site/content/_index.md"
+        label: "Ponddy AI"
+        name: ai
+        fields:
+          - label: Site Settings
+            name: site
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Author
+                name: author
+                widget: string
+              - label: Keywords
+                name: keywords
+                widget: string
+              - label: Classification
+                name: classification
+                widget: string
+              - label: Description
+                name: description
+                widget: string
+              - label: Copyright
+                name: copyright
+                widget: string
+              - label: Pinterest Domain Verify
+                name: domain_verify
+                widget: string
+              - label: Logo
+                name: logo
+                widget: object
+                fields:
+                  - label: Image
+                    name: image
+                    widget: image
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Alt
+                    name: alt
+                    widget: string
+          - label: Header – Menu Links
+            name: header
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Link-to Section
+                name: link_section
+                widget: string
+          - label: Header – Mobile Menu
+            name: mobile_menu
+            widget: list
+            fields:
+              - label: Item
+                name: item
+                widget: string
+              - label: Icon
+                name: image
+                widget: image
+              - label: Link
+                name: link
+                widget: string
+          - label: Main - Site content
+            name: main
+            widget: object
+            fields:
+              - label: Website Hero
+                name: hero
+                widget: object
+                fields:
+                  - {label: Headline 1, name: headline1, widget: text}
+                  - {label: Headline 2, name: headline2, widget: text}
+                  - {label: Headline 3, name: headline3, widget: text}
+                  - {label: Image 1, name: image1, widget: image}
+                  - {label: Image 2, name: image2, widget: image}
+                  - {label: Image 3, name: image3, widget: image}
+              - label: Who We Are
+                name: about
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Content, name: text, widget: text}
+                  - label: Boxes
+                    name: boxes
+                    widget: list
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Image
+                        name: image
+                        widget: image
+                      - label: Content
+                        name: text
+                        widget: text
+              - label: AI
+                name: ai
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Content, name: text, widget: text}
+                  - {label: Image, name: image, widget: image}
+              - label: Knowledge
+                name: knowledge
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Content, name: text, widget: text}
+              - label: Whate We Do
+                name: services
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Content, name: text, widget: text}
+              - label: Tutors
+                name: tutors
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Description, name: description, widget: text}
+                  - {label: Link URL, name: url, widget: string}
+                  - {label: Button Text, name: button_text, widget: string}
+              - label: Reader
+                name: reader
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Description, name: description, widget: text}
+                  - {label: Link URL, name: url, widget: string}
+                  - {label: Button Text, name: button_text, widget: string}
+              - label: Textbooks
+                name: textbooks
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Description, name: description, widget: text}
+                  - {label: Link URL, name: url, widget: string}
+                  - {label: Button Text, name: button_text, widget: string}
+              - label: Reviews
+                name: reviews
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - label: Reviews
+                    name: reviews
+                    widget: list
+                    fields:
+                      - {label: Name, name: name, widget: string}
+                      - {label: School, name: school, widget: string}
+                      - {label: Text, name: text, widget: text}
+              - label: News
+                name: news
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Button Text, name: button_text, widget: string}
+                  - label: Carousel
+                    name: carousel
+                    widget: list
+                    fields:
+                      - {label: Image, name: image, widget: image}
+                      - {label: Content, name: text, widget: text}
+                      - {label: Link URL, name: url, widget: string}
+              - label: Contactus
+                name: contactus
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Mail, name: gitmail, widget: string}
+                  - label: Offices
+                    name: offices
+                    widget: list
+                    fields:
+                      - {label: Title, name: title, widget: string}
+                      - {label: Address, name: address, widget: text}
+                      - {label: Phone, name: phone, widget: string}
+              - label: Social Networks
+                name: social
+                widget: object
+                fields:
+                  - {label: Facebook, name: facebook, widget: string}
+                  - {label: Facebook Image, name: facebook_image, widget: image}
+                  - {label: Twitter, name: twitter, widget: string}
+                  - {label: Twitter Image, name: twitter_image, widget: image}
+                  - {label: Youtube, name: youtube, widget: string}
+                  - {label: Youtube Image, name: youtube_image, widget: image}
+                  - {label: Instagram, name: instagram, widget: string}
+                  - {label: Instagram Image, name: instagram_image, widget: image}
+                  - {label: LinkedIn, name: linkedin, widget: string}
+                  - {label: LinkedIn Image, name: linkedin_image, widget: image}
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - label: Products (Logo)
+                name: products_icon
+                widget: list
+                fields:
+                  - label: Logo of the Product
+                    name: image
+                    widget: image
+                    alt: string
+                  - label: Link to the Product Page
+                    name: url
+                    widget: string
+              - label: Box - Our Products
+                name: our_products
+                widget: object
+                fields:
+                  - label: Name of the Box
+                    name: title
+                    widget: string
+                  - label: Product entries
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Name of the Product
+                        name: title
+                        widget: string
+                      - label: Link to the Product Page
+                        name: url
+                        widget: string
+              - label: Box - Work
+                name: work
+                widget: object
+                fields:
+                  - label: Name of the Box
+                    name: title
+                    widget: string
+                  - label: Link entries
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Link title
+                        name: title
+                        widget: string
+                      - label: Link URL
+                        name: url
+                        widget: string
+              - label: Box - Resources
+                name: resources
+                widget: object
+                fields:
+                  - label: Name of the Box
+                    name: title
+                    widget: string
+                  - label: Resource entries
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Link title
+                        name: title
+                        widget: string
+                      - label: Link URL
+                        name: url
+                        widget: string
+              - label: Box - Terms and Policies
+                name: tnp
+                widget: object
+                fields:
+                  - label: Name of the Box
+                    name: title
+                    widget: string
+                  - label: Link entries
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Link title
+                        name: title
+                        widget: string
+                      - label: Link URL
+                        name: url
+                        widget: string
+              - {label: Copyright, name: copyright, widget: string}
+              - {label: Topup Arrow, name: topup_arrow, widget: image}
+      - file: "site/content/career/_index.md"
+        label: "Ponddy Career"
+        name: career
+        fields:
+          - label: Site Settings
+            name: site
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Author
+                name: author
+                widget: string
+              - label: Keywords
+                name: keywords
+                widget: string
+              - label: Classification
+                name: classification
+                widget: string
+              - label: Description
+                name: description
+                widget: string
+              - label: Copyright
+                name: copyright
+                widget: string
+              - label: Pinterest Domain Verify
+                name: domain_verify
+                widget: string
+              - label: Logo
+                name: logo
+                widget: object
+                fields:
+                  - label: Image
+                    name: image
+                    widget: image
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Alt
+                    name: alt
+                    widget: string
+          - label: Header – Menu Links
+            name: header
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Link
+                name: link
+                widget: string
+              - label: ID
+                name: id
+                widget: string
+          - label: Header – Mobile Menu
+            name: mobile_menu
+            widget: list
+            fields:
+              - label: Item
+                name: item
+                widget: string
+              - label: Icon
+                name: image
+                widget: image
+              - label: Link
+                name: link
+                widget: string
+          - label: Main - Site content
+            name: main
+            widget: object
+            fields:
+              - label: Hero
+                name: hero
+                widget: object
+                fields:
+                  - {label: Headline, name: headline, widget: string}
+                  - {label: Button, name: button_text, widget: string}
+              - label: Location
+                name: location
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: San Jose, name: sanjose, widget: string}
+                  - {label: Taipei, name: taipei, widget: string}
+                  - {label: Tientsin, name: tientsin, widget: string}
+                  - label: San Jose Jobs
+                    name: sanjose_jobs
+                    widget: list
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Abstract
+                        name: abstract
+                        widget: text
+                      - label: Location
+                        name: location
+                        widget: string
+                      - label: Mapping
+                        name: mapping
+                        widget: string
+                  - label: Taipei Jobs
+                    name: taipei_jobs
+                    widget: list
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Abstract
+                        name: abstract
+                        widget: text
+                      - label: Location
+                        name: location
+                        widget: string
+                      - label: Mapping
+                        name: mapping
+                        widget: string
+                  - label: Tientsin Jobs
+                    name: tientsin_jobs
+                    widget: list
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Abstract
+                        name: abstract
+                        widget: text
+                      - label: Location
+                        name: location
+                        widget: string
+                      - label: Mapping
+                        name: mapping
+                        widget: string
+                  - label: Job Detail
+                    name: job
+                    widget: list
+                    fields:
+                      - {label: Title, name: title, widget: string}
+                      - {label: Location, name: location, widget: string}
+                      - {label: Duties Title, name: duties_title, widget: string}
+                      - {label: Duties, name: duties, widget: text}
+                      - {label: Qualifications Title, name: qualifications_title, widget: string}
+                      - {label: Qualifications, name: qualifications, widget: text}
+                      - {label: ID, name: id, widget: string}
+                      - {label: Education, name: education, widget: string}
+              - label: Business
+                name: business
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Reader, name: reader, widget: string}
+                  - {label: Tutors, name: tutors, widget: string}
+                  - {label: Smart Textbooks, name: smart_textbooks, widget: string}
+                  - {label: Smart Textbooks (Mobile), name: smart_textbooks_mobile, widget: string}
+              - label: Contactus
+                name: contactus
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Mail, name: gitmail, widget: string}
+                  - label: Offices
+                    name: offices
+                    widget: list
+                    fields:
+                      - {label: Title, name: title, widget: string}
+                      - {label: Address, name: address, widget: text}
+                      - {label: Phone, name: phone, widget: string}
+              - label: Social Networks
+                name: social
+                widget: object
+                fields:
+                  - {label: Facebook, name: facebook, widget: string}
+                  - {label: Facebook Image, name: facebook_image, widget: image}
+                  - {label: Twitter, name: twitter, widget: string}
+                  - {label: Twitter Image, name: twitter_image, widget: image}
+                  - {label: Youtube, name: youtube, widget: string}
+                  - {label: Youtube Image, name: youtube_image, widget: image}
+                  - {label: Instagram, name: instagram, widget: string}
+                  - {label: Instagram Image, name: instagram_image, widget: image}
+                  - {label: LinkedIn, name: linkedin, widget: string}
+                  - {label: LinkedIn Image, name: linkedin_image, widget: image}
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - label: Products (Logo)
+                name: products_icon
+                widget: list
+                fields:
+                  - label: Logo of the Product
+                    name: image
+                    widget: image
+                    alt: string
+                  - label: Link to the Product Page
+                    name: url
+                    widget: string
+              - label: Box - Our Products
+                name: our_products
+                widget: object
+                fields:
+                  - label: Name of the Box
+                    name: title
+                    widget: string
+                  - label: Product entries
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Name of the Product
+                        name: title
+                        widget: string
+                      - label: Link to the Product Page
+                        name: url
+                        widget: string
+              - label: Box - Work
+                name: work
+                widget: object
+                fields:
+                  - label: Name of the Box
+                    name: title
+                    widget: string
+                  - label: Link entries
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Link title
+                        name: title
+                        widget: string
+                      - label: Link URL
+                        name: url
+                        widget: string
+              - label: Box - Resources
+                name: resources
+                widget: object
+                fields:
+                  - label: Name of the Box
+                    name: title
+                    widget: string
+                  - label: Resource entries
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Link title
+                        name: title
+                        widget: string
+                      - label: Link URL
+                        name: url
+                        widget: string
+              - label: Box - Terms and Policies
+                name: tnp
+                widget: object
+                fields:
+                  - label: Name of the Box
+                    name: title
+                    widget: string
+                  - label: Link entries
+                    name: links
+                    widget: list
+                    fields:
+                      - label: Link title
+                        name: title
+                        widget: string
+                      - label: Link URL
+                        name: url
+                        widget: string
+              - {label: Copyright, name: copyright, widget: string}
+              - {label: Topup Arrow, name: topup_arrow, widget: image}
+        label: "[Ja] Ponddy Reader - Pricing"
+        name: reader_pricing-js
+        fields:
+          - label: Site Settings
+            name: site
+            widget: object
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Author
+                name: author
+                widget: string
+              - label: Keywords
+                name: keywords
+                widget: string
+              - label: Classification
+                name: classification
+                widget: string
+              - label: Description
+                name: description
+                widget: string
+              - label: Copyright
+                name: copyright
+                widget: string
+              - label: Logo
+                name: logo
+                widget: object
+                fields:
+                  - label: Image
+                    name: image
+                    widget: image
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Alt
+                    name: alt
+                    widget: string
+          - label: Header – Menu Links
+            name: header
+            widget: object
+            fields:
+              - label: Site menu
+                name: navbar
+                widget: object
+                fields:
+                  - {label: How it Works, name: how_it_works, widget: string}
+                  - {label: Pricing, name: pricing, widget: string}
+              - label: Action menu
+                name: actionbar
+                widget: object
+                fields:
+                  - {label: Sign in, name: signin, widget: string}
+                  - {label: Sign up, name: signup, widget: string}
+                  - {label: Ponddy, name: ponddy, widget: string}
+          - label: Main - Site content
+            name: main
+            widget: object
+            fields:
+              - label: Website Hero
+                name: hero
+                widget: object
+                fields:
+                  - label: Pricing Boxes
+                    name: pricing_boxes
+                    widget: list
+                    fields:
+                      - {label: Title, name: title, widget: string}
+                      - {label: Description, name: description, widget: string}
+                      - {label: Signup Link, name: signup_link, widget: string}
+                      - {label: Signup Button Text, name: button_text, widget: string}
+                      - {label: Type, name: type, widget: string}
+                      - label: Price
+                        name: price
+                        widget: object
+                        fields:
+                          - {label: Currency, name: currency, widget: string, required: false}
+                          - {label: Main Price, name: main, widget: string}
+                          - {label: Extra, name: extra, widget: string, required: false}
+                      - label: Badge
+                        name: badge
+                        widget: object
+                        required: false
+                        fields:
+                          - {label: Line 1, name: line1, widget: string}
+                          - {label: Line 2, name: line2, widget: string}
+              - label: Feature Tables
+                name: features
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - label: Tables
+                    name: tables
+                    widget: list
+                    fields:
+                      - label: Table Head
+                        name: head
+                        widget: list
+                        fields:
+                          - {label: Content, name: content, widget: string}
+                      - label: Table Rows
+                        name: rows
+                        widget: list
+                        fields:
+                          - label: Cells
+                            name: cells
+                            widget: list
+                            fields:
+                              - {label: Content, name: content, widget: string, required: false}
+                              - {label: Image, name: image, widget: image, required: false}
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - label: Products (Icons)
+                name: products_icon
+                widget: list
+                fields:
+                  - {label: Image, name: image, widget: image}
+                  - {label: Link URL, name: url, widget: string}
+                  - {label: Alt, name: alt, widget: string}
+              - label: Navigation Links
+                name: navigation
+                widget: list
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Link URL, name: url, widget: string}
+              - {label: Copyright, name: copyright, widget: string}
+              - {label: Topup Arrow, name: topup_arrow, widget: image}
+      - file: "site/content/tutors/_index.md"
+        label: "Ponddy Tutors"
+        name: tutors
+        fields:
+          - label: Site Settings
+            name: site
+            widget: object
+            fields:
+              - label: Author
+                name: author
+                widget: string
+              - label: Classification
+                name: classification
+                widget: string
+              - label: Copyright
+                name: copyright
+                widget: string
+              - label: Description
+                name: description
+                widget: string
+              - label: Keywords
+                name: keywords
+                widget: string
+              - label: Title
+                name: title
+                widget: string
+          - label: Header
+            name: header
+            widget: object
+            fields:
+              - label: Navbar
+                name: navbar
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: ID
+                    name: id
+                    widget: string
+              - label: Mail
+                name: mail
+                widget: object
+                fields:
+                  - label: Mail
+                    name: mail
+                    widget: string
+                  - label: Link
+                    name: link
+                    widget: string
+              - label: Actionbar
+                name: actionbar
+                widget: object
+                fields:
+                  - label: Register & Get a FREE assessment
+                    name: register1
+                    widget: object
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Link
+                        name: link
+                        widget: string
+                  - label: Login
+                    name: login
+                    widget: object
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Link
+                        name: link
+                        widget: string
+                  - label: Register
+                    name: register2
+                    widget: object
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Link
+                        name: link
+                        widget: string
+                  - label: Dashboard
+                    name: dashboard
+                    widget: string
+                  - label: Log out
+                    name: log_out
+                    widget: string
+                  - label: Ponddy
+                    name: ponddy
+                    widget: object
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Link
+                        name: link
+                        widget: string
+          - label: Main - Site Content
+            name: main
+            widget: object
+            fields:
+              - label: Hero
+                name: hero
+                widget: object
+                fields:
+                  - label: Image
+                    name: image
+                    widget: image
+                  - label: Image Srcset
+                    name: image_srcset
+                    widget: string
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Description
+                    name: description
+                    widget: text
+              - label: Progressive
+                name: progressive
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Description
+                    name: description
+                    widget: text
+                  - label: Image
+                    name: image
+                    widget: image
+                  - label: Image Srcset
+                    name: image_srcset
+                    widget: string
+                  - label: Notes
+                    name: note
+                    widget: list
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+              - label: Tutors
+                name: tutors
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Description
+                    name: description
+                    widget: text
+                  - label: Tutors Image
+                    name: tutors_img
+                    widget: object
+                    fields:
+                      - label: Image
+                        name: image
+                        widget: image
+                      - label: Alt
+                        name: alt
+                        widget: string
+                      - label: Srcset
+                        name: srcset
+                        widget: string
+                  - label: Feature Left
+                    name: feature_left
+                    widget: list
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Description
+                        name: description
+                        widget: text
+                      - label: Color
+                        name: color
+                        widget: string
+                  - label: Feature Right
+                    name: feature_right
+                    widget: list
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Description
+                        name: description
+                        widget: text
+                      - label: Color
+                        name: color
+                        widget: string
+              - label: Feature
+                name: feature
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Description
+                    name: description
+                    widget: text
+                  - label: Cards
+                    name: cards
+                    widget: list
+                    fields:
+                      - label: Image
+                        name: image
+                        widget: image
+                      - label: Alt
+                        name: alt
+                        widget: string
+                      - label: ID
+                        name: id
+                        widget: string
+                  - label: List
+                    name: list
+                    widget: list
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Description
+                        name: description
+                        widget: text
+              - label: Course
+                name: course
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Hero Image
+                    name: hero
+                    widget: object
+                    fields:
+                      - label: Image
+                        name: image
+                        widget: image
+                      - label: Alt
+                        name: alt
+                        widget: string
+                      - label: Srcset
+                        name: srcset
+                        widget: string
+                  - label: Items
+                    name: item
+                    widget: list
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+              - label: Degree
+                name: degree
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Course
+                    name: course
+                    widget: object
+                    fields:
+                      - label: Pinyin
+                        name: pinyin
+                        widget: string
+                      - label: Chinese I
+                        name: chinese_i
+                        widget: string
+                      - label: Chinese II
+                        name: chinese_ii
+                        widget: string
+                      - label: Chinese III
+                        name: chinese_iii
+                        widget: string
+                      - label: Chinese IV
+                        name: chinese_iv
+                        widget: string
+                      - label: Pre AP
+                        name: pre_ap
+                        widget: string
+                      - label: Ponddy AP® Chinese Language and Culture Course
+                        name: ap_chinese_language_and_culture_course
+                        widget: string
+                      - label: AP Tutoring Group
+                        name: ap_tutoring_group
+                        widget: string
+                      - label: AP Tutoring 1-on-1
+                        name: ap_tutoring_1_on_1
+                        widget: string
+                      - label: AP Exam Prep Extended
+                        name: ap_exam_prep_extended
+                        widget: string
+                      - label: AP Exam Prep Standard
+                        name: ap_exam_prep_standard
+                        widget: string
+                  - label: Buy Now Button
+                    name: buy_now
+                    widget: string
+                  - label: Contact
+                    name: contact
+                    widget: object
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Description
+                        name: description
+                        widget: text
+                      - label: Mail Text
+                        name: mail_text
+                        widget: text
+                      - label: Note
+                        name: note
+                        widget: text
+              - label: Works
+                name: works
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Steps
+                    name: steps
+                    widget: list
+                    fields:
+                      - label: Title
+                        name: title
+                        widget: string
+                      - label: Description
+                        name: description
+                        widget: string
+                      - label: Image
+                        name: image
+                        widget: image
+              - label: Customize
+                name: customize
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Link
+                    name: link
+                    widget: string
+                  - label: Button Text
+                    name: button_text
+                    widget: string
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - label: Topup Arrow
+                name: topup_arrow
+                widget: image
+              - label: Products Icon
+                name: products_icon
+                widget: list
+                fields:
+                  - label: Image
+                    name: image
+                    widget: image
+                  - label: Url
+                    name: url
+                    widget: string
+              - label: Ponddy AI
+                name: ponddy
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Link
+                    name: link
+                    widget: string
+              - label: Navigation
+                name: navigation
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: ID
+                    name: id
+                    widget: string
+              - label: Copyright
+                name: copyright
+                widget: string

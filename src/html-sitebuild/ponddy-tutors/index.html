@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Welcome | Ponddy Tutors</title>
+    <base href="./">
+    <!--默认加载极速模式-->
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="theme-color" content="#3fb2d1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="shortcut icon" type="image/gif" href="public/images/ponddy-logo.png">
+    <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="public/css/custom.css">
+    <script src=" https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"> </script> <script
+        src=" https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        var GA_TRACKING_ID = 'UA-131276292-2';
+        var authApiUrl = 'https://auth-dev.ponddy.com';
+        var apiUrl = 'https://apis-tutors-sandbox.ponddy.com';
+        var clientId = '1bcfe1b9-8251-4532-8521-38adc2fe972c'
+
+        let gtagScript = document.createElement('script');
+        gtagScript.async = true;
+        gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_TRACKING_ID;
+        document.getElementsByTagName('head')[0].appendChild(gtagScript);
+        gtag('config', GA_TRACKING_ID, {
+            'custom_map': {
+                'dimension1': 'ad'
+            }
+        });
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <img class="logo" src="public/images/tutors-logo.svg">
+                <button type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-text">menu</span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" style="display: none;">
+                <ul class="nav navbar-nav">
+                    <li><a
+                            onclick="$('html,body').animate({ scrollTop: $('#works').offset().top - 70 }, 300);
+                            gtag('event', 'go_main', { 'event_category': 'Header_how_it_works-' + adType, 'event_action': 'Scroll_to_main' });
+                        gtag('event', 'view', { 'event_category': 'Landing-' + adType, 'event_label': 'How_it_works', 'ad': adType })">How
+                            it works</a></li>
+                    <li><a
+                            onclick="$('html,body').animate({ scrollTop: $('#degree').offset().top - 70 }, 300);
+                            gtag('event', 'go_course', { 'event_category': 'Header_course-' + adType, 'event_action': 'Scroll_to_course' });
+                            gtag('event', 'view', { 'event_category': 'Landing-' + adType, 'event_label': 'Course', 'ad': adType })">Course</a>
+                    </li>
+                    <li><a
+                            onclick="$('html,body').animate({ scrollTop: $('#degree').offset().top - 70 }, 300);
+                            gtag('event', 'go_pricing', { 'event_category': 'Header_pricing-' + adType, 'event_action': 'Scroll_to_pricing' });
+                            gtag('event', 'view', { 'event_category': 'Landing-' + adType, 'event_label': 'Pricing', 'ad': adType })">Pricing</a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="mailto:Support@ponddytutors.com">
+                            <img style="margin-right:17px" src="public/images/mail.png"
+                                alt="e-mail">Support@ponddytutors.com</a>
+                    </li>
+                </ul>
+                <div class="nav navbar-nav navbar-right">
+                    <a class="navbar-link register-btn visible-xs"
+                        href="https://auth-dev.ponddy.com/auth/register/?client_id=1bcfe1b9-8251-4532-8521-38adc2fe972c&redirect_uri=https://apis-tutors-sandbox.ponddy.com%2Flogin%2FauthSignin&next=/&"
+                        onclick="gtag('event','sign_up', { event_category:'Header_sign_up-'+adType, event_action:'Sign_up'});">Register
+                        & Get a FREE assessment</a>
+                    <a class="navbar-link login-btn"
+                        onclick="gtag('event','login', { event_category:'Header_login-'+adType, event_action:'Login'});"
+                        href="https://auth-dev.ponddy.com/auth/?client_id=1bcfe1b9-8251-4532-8521-38adc2fe972c&redirect_uri=https://apis-tutors-sandbox.ponddy.com%2Flogin%2FauthSignin&next=/&">Login</a>
+                    <a class="navbar-link rectangle-btn hidden-xs"
+                        href="https://auth-dev.ponddy.com/auth/register/?client_id=1bcfe1b9-8251-4532-8521-38adc2fe972c&redirect_uri=https://apis-tutors-sandbox.ponddy.com%2Flogin%2FauthSignin&next=/&"
+                        onclick="gtag('event','sign_up', { event_category:'Header_sign_up-'+adType, event_action:'Sign_up'});">Register</a>
+                    <button class="navbar-link dashboard-btn"
+                        onclick="gtag('event', 'go_home', { 'event_category': 'Header_dashboard-' + adType, 'event_action': 'Go_dashboard' });
+                    gtag('event', 'view', { 'event_category': 'Landing-' + adType, 'event_label': 'Dashboard', 'ad': adType })">Dashboard</button>
+                    <a class="logOut-link navbar-link logout-btn cursor"
+                        onclick="gtag('event', 'view', { 'event_category': 'Landing-' + adType, 'event_label': 'Logout', 'ad': adType })">Log
+                        out</a>
+                    <a href=" http://www.ponddy.ai/" target="_blank"
+                        onclick="gtag('event','ponddy-ai', { event_category:'Header_ponddy-'+adType, event_action:'Go_ponddy-ai'});gtag('event', 'view', {'event_category' : 'Landing-'+adType, 'event_label' : 'Ponddy', 'ad': adType});"
+                        class="navbar-link ponddy-link hidden-xs">Ponddy</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <img src="public/images/hero-image@2x.png" alt="hero"
+                        srcset="public/images/hero-image.png, public/images/hero-image@3x.png 3x">
+                </div>
+                <div class="col-md-6 col-xs-12 hero-content">
+                    <h1>Accelerate learning with Ponddy Tutors</h1>
+                    <p>Maximize learning with live instructors and AI based materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="progressive">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Progressive</h3>
+                    <p>We move learners from beginning to AP level and beyond with our comprehensive curriculum that
+                        follow
+                        national and international standards.</p>
+                </div>
+                <div class="col-md-12 hidden-sm hidden-xs">
+                    <img src="public/images/jump.png" alt="jump"
+                        srcset="public/images/jump@2x.png 2x, public/images/jump@3x.png 3x">
+                </div>
+            </div>
+        </div>
+        <div class="progressive-right">
+            <p class="progressive-note progressive-note-show">4. Mastering Chinese in no time</p>
+            <p class="progressive-note progressive-note-show">3. Enjoying the power and the benefits of AI learning</p>
+            <p class="progressive-note progressive-note-show">2. Enabling students to interact with personalized
+                learning plans</p>
+            <p class="progressive-note progressive-note-show">1. Getting students to fall in love with learning Chinese
+            </p>
+        </div>
+    </section>
+
+    <section id="tutors">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>Tutors</h2>
+                    <p>Our native-speaking tutors are experienced teachers who undergo intensive training to teach
+                        Chinese
+                        as a Foreign Language (CFL).</p>
+                    <p>Ponddy Tutors are certified experts and many have a master&apos;s degree in CFL.</p>
+                    <p>They work with each learner whether new, bilingual or heritage speakers to improve student
+                        success.</p>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-4 col-md-offset-1 tutors-img">
+                        <img src="public/images/tutors-pic.png" alt="tutors"
+                            srcset="public/images/tutors-pic@2x.png 2x, public/images/tutors-pic@3x.png 3x">
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>
+                                <div class="item">
+                                    <div class="circle blue col-md-3 col-xs-3"></div>
+                                    <div class="col-md-9 col-xs-9">
+                                        <span>Teacher</span>
+                                        <p>Our native-speaking tutors are experienced teachers.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="circle green col-md-3 col-xs-3"></div>
+                                    <div class="col-md-9 col-xs-9">
+                                        <span>Certified</span>
+                                        <p>Experts with a master's degree in teaching Chinese as a Foreign Language
+                                            (CFL).</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="circle yellow col-md-3 col-xs-3"></div>
+                                    <div class="col-md-9 col-xs-9">
+                                        <span>Smart Textbooks</span>
+                                        <p>Dynamic comprehensive online learning modules powered by Artificial
+                                            Intelligence.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feature">
+        <div class="container">
+            <div class="row feature-content">
+                <div class="col-md-8 col-md-offset-2 abstract">
+                    <h2>Exclusive feature - Smart Textbooks</h2>
+                    <p>Our native-speaking tutors are experienced teachers who undergo intensive training to teach
+                        Chinese
+                        as a Foreign Language (CFL).
+                        Ponddy Tutors are certified experts and many have a master&apos;s degree in CFL.
+                        They work with each learner whether new, bilingual or heritage speakers to improve student
+                        success.</p>
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <div class="feature-cards">
+                        <img src="public/images/learning-tool.png" alt="learning-tool" id="learning-tool">
+                        <img src="public/images/themed-pondlets.png" alt="themed-pondlets" id="themed-pondlets">
+                        <img src="public/images/real-time-analytics.png" alt="real-time-analytics" id="real-time-analytics">
+                        <img src="public/images/gamified-exercise.png" alt="gamified-exercise" id="gamified-exercise">
+                    </div>
+                </div>
+
+                <div class="col-md-12 boxs">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <h2>Learning tools</h2>
+                            <p>Ponddy Tutors leverage the Affinity Knowledge Learning System (AKLS) which groups similar
+                                elements together for better retention.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <h2>Thematic Pondlets</h2>
+                            <p>Interactive learning modules with vocabulary, in- context definitions, audio and grammar
+                                aligned to AP themes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <h2>Gamified exercise</h2>
+                            <p>Continuously changing so each time you practice you are presented with new challenges.
+                                Analytics result across all the users will also be available for reference.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="course">
+        <div class="container">
+            <div class="row text-center course-list">
+                <h2>Course</h2>
+                <div class="col-md-4">
+                    <img src="public/images/course@2x.png" alt="hero"
+                        srcset="public/images/course.png, public/images/course@3x.png 3x">
+                </div>
+                <div class="col-md-7 text-left col-md-offset-1 mt50">
+                    <ul>
+                        <li>
+                            <p>
+                                <span> <img src="public/images/check@2x.png" alt="hero"
+                                        srcset="public/images/check.png, public/images/check@3x.png 3x"></span>
+                                <span class="ml">Live certified teachers, interactive online class</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span> <img src="public/images/check@2x.png" alt="hero"
+                                        srcset="public/images/check.png, public/images/check@3x.png 3x"></span>
+                                <span class="ml">Small class size with a maximum of 3 students</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span> <img src="public/images/check@2x.png" alt="hero"
+                                        srcset="public/images/check.png, public/images/check@3x.png 3x"></span>
+                                <span class="ml">Qualify for courses through FREE assessment</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span> <img src="public/images/check@2x.png" alt="hero"
+                                        srcset="public/images/check.png, public/images/check@3x.png 3x"></span>
+                                <span class="ml">Strengthen speaking, writing, reading, listening skills</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span> <img src="public/images/check@2x.png" alt="hero"
+                                        srcset="public/images/check.png, public/images/check@3x.png 3x"></span>
+                                <span class="ml">Use AI-powered Learning tools - Smart Textbooks and Ponddy
+                                    Reader</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span> <img src="public/images/check@2x.png" alt="hero"
+                                        srcset="public/images/check.png, public/images/check@3x.png 3x"></span>
+                                <span class="ml">Progressive learning path that paves your way to AP Chinese® and
+                                    beyond</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="degree">
+        <div class="container-fluid text-center p0">
+            <h2>AP Chinese</h2>
+            <div class="visible-lg visible-md">
+                <svg viewBox="0 0 1306.043 400" xmlns="http://www.w3.org/2000/svg">
+                    <g id="roadmapGroup" transform="translate(6.984 -10)">
+                        <path class="lineFill" d="M0,90.3c38.7,16.7,84.5,28.8,144.4,37.8,118.7,18,245.3,9.5,366.2-24.5,34-9.6,68-20.9,101-31.9
+                        C649,56.8,686.5,44.3,724,34.2,785.2,17.6,848.4.5,913.4,0
+                    c30.9-.2,64.7,3.6,106.4,11.9,9.5,1.9,19.2,4,28.6,6,36.5,7.8,74.3,15.8,112.3,16.9
+                    a394.877,394.877,0,0,0,142.4-22.3" id="bgLine" transform="translate(-6 135.008)"></path>
+                        <g class="group" id="g1">
+                            <circle class="dot2" cx="144.7151641845703" cy="263.1555067138672" id="p3" r="23.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="26"></animate>
+                            </circle>
+                            <circle class="dot1" cx="144.7151641845703" cy="263.1555067138672" id="p2" r="17.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="20"></animate>
+                            </circle>
+                            <circle class="pointHover active" cx="144.7151641845703" cy="263.1555067138672" id="hp1"
+                                r="11"></circle>
+                            <circle class="dot" cx="144.7151641845703" cy="263.1555067138672" id="p1" r="6.5"></circle>
+                            <foreignObject width="150" height="100"
+                                transform="translate(69.71516418457031 288.1475067138672)">
+                                <div
+                                    style="font-size: 18px;font-weight: bold;;margin:0; text-align: center;height: 100%;display: flex;justify-content: center;align-items: flex-start;">
+                                    <span>Chinese I</span>
+                                </div>
+
+                            </foreignObject>
+                        </g>
+                        <g class="group" id="g1">
+                            <circle class="dot2 none" cx="273.2726135253906" cy="272.30324230957035" id="p3"
+                                r="23.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="26"></animate>
+                            </circle>
+                            <circle class="dot1 none" cx="273.2726135253906" cy="272.30324230957035" id="p2"
+                                r="17.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="20"></animate>
+                            </circle>
+                            <circle class="pointHover" cx="273.2726135253906" cy="272.30324230957035" id="hp1" r="11">
+                            </circle>
+                            <circle class="dot" cx="273.2726135253906" cy="272.30324230957035" id="p1" r="6.5"></circle>
+
+                            <foreignObject width="150" height="100"
+                                transform="translate(198.27261352539062 147.2952423095703)">
+
+                                <div
+                                    style="font-size: 18px;font-weight: bold;;margin:0; text-align: center;height: 100%;display: flex;justify-content: center;align-items: flex-end;">
+                                    <span>Chinese II</span>
+                                </div>
+
+                            </foreignObject>
+                        </g>
+                        <g class="group" id="g1">
+                            <circle class="dot2 none" cx="401.768798828125" cy="262.12128887939457" id="p3" r="23.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="26"></animate>
+                            </circle>
+                            <circle class="dot1 none" cx="401.768798828125" cy="262.12128887939457" id="p2" r="17.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="20"></animate>
+                            </circle>
+                            <circle class="pointHover" cx="401.768798828125" cy="262.12128887939457" id="hp1" r="11">
+                            </circle>
+                            <circle class="dot" cx="401.768798828125" cy="262.12128887939457" id="p1" r="6.5"></circle>
+
+                            <foreignObject width="150" height="100"
+                                transform="translate(326.768798828125 287.11328887939453)">
+
+                                <div
+                                    style="font-size: 18px;font-weight: bold;;margin:0; text-align: center;height: 100%;display: flex;justify-content: center;align-items: flex-start;">
+                                    <span>Chinese III</span>
+                                </div>
+
+                            </foreignObject>
+                        </g>
+                        <g class="group" id="g1">
+                            <circle class="dot2 none" cx="527.5030517578125" cy="233.70219860839845" id="p3"
+                                r="23.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="26"></animate>
+                            </circle>
+                            <circle class="dot1 none" cx="527.5030517578125" cy="233.70219860839845" id="p2"
+                                r="17.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="20"></animate>
+                            </circle>
+                            <circle class="pointHover" cx="527.5030517578125" cy="233.70219860839845" id="hp1" r="11">
+                            </circle>
+                            <circle class="dot" cx="527.5030517578125" cy="233.70219860839845" id="p1" r="6.5"></circle>
+
+                            <foreignObject width="150" height="100"
+                                transform="translate(452.5030517578125 108.69419860839844)">
+
+                                <div
+                                    style="font-size: 18px;font-weight: bold;;margin:0; text-align: center;height: 100%;display: flex;justify-content: center;align-items: flex-end;">
+                                    <span>Chinese IV</span>
+                                </div>
+
+                            </foreignObject>
+                        </g>
+                        <g class="group" id="g1">
+                            <circle class="dot2 none" cx="649.676025390625" cy="192.37907467651368" id="p3" r="23.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="26"></animate>
+                            </circle>
+                            <circle class="dot1 none" cx="649.676025390625" cy="192.37907467651368" id="p2" r="17.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="20"></animate>
+                            </circle>
+                            <circle class="pointHover" cx="649.676025390625" cy="192.37907467651368" id="hp1" r="11">
+                            </circle>
+                            <circle class="dot" cx="649.676025390625" cy="192.37907467651368" id="p1" r="6.5"></circle>
+
+                            <foreignObject width="150" height="100"
+                                transform="translate(574.676025390625 217.37107467651367)">
+
+                                <div
+                                    style="font-size: 18px;font-weight: bold;;margin:0; text-align: center;height: 100%;display: flex;justify-content: center;align-items: flex-start;">
+                                    <span>Pre AP</span>
+                                </div>
+
+                            </foreignObject>
+                        </g>
+                        <g class="group" id="g1">
+                            <circle class="dot2 none" cx="773.4402465820312" cy="156.13144551086427" id="p3"
+                                r="23.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="26"></animate>
+                            </circle>
+                            <circle class="dot1 none" cx="773.4402465820312" cy="156.13144551086427" id="p2"
+                                r="17.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="20"></animate>
+                            </circle>
+                            <circle class="pointHover" cx="773.4402465820312" cy="156.13144551086427" id="hp1" r="11">
+                            </circle>
+                            <circle class="dot" cx="773.4402465820312" cy="156.13144551086427" id="p1" r="6.5"></circle>
+
+                            <foreignObject width="150" height="100"
+                                transform="translate(698.4402465820312 31.123445510864258)">
+
+                                <div
+                                    style="font-size: 18px;font-weight: bold;;margin:0; text-align: center;height: 100%;display: flex;justify-content: center;align-items: flex-end;">
+                                    <span>AP® Chinese Language and Culture Course</span>
+                                </div>
+
+                            </foreignObject>
+                        </g>
+                        <g class="group" id="g1">
+                            <circle class="dot2 none" cx="900.5280151367188" cy="135.32075522708894" id="p3"
+                                r="23.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="26"></animate>
+                            </circle>
+                            <circle class="dot1 none" cx="900.5280151367188" cy="135.32075522708894" id="p2"
+                                r="17.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="20"></animate>
+                            </circle>
+                            <circle class="pointHover" cx="900.5280151367188" cy="135.32075522708894" id="hp1" r="11">
+                            </circle>
+                            <circle class="dot" cx="900.5280151367188" cy="135.32075522708894" id="p1" r="6.5"></circle>
+
+                            <foreignObject width="150" height="100"
+                                transform="translate(825.5280151367188 160.31275522708893)">
+
+                                <div
+                                    style="font-size: 18px;font-weight: bold;;margin:0; text-align: center;height: 100%;display: flex;justify-content: center;align-items: flex-start;">
+                                    <span>AP Tutoring</span>
+                                </div>
+
+                            </foreignObject>
+                        </g>
+                        <g class="group" id="g1">
+                            <circle class="dot2 none" cx="1028.5076904296875" cy="148.68939457702638" id="p3"
+                                r="23.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="26"></animate>
+                            </circle>
+                            <circle class="dot1 none" cx="1028.5076904296875" cy="148.68939457702638" id="p2"
+                                r="17.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="20"></animate>
+                            </circle>
+                            <circle class="pointHover" cx="1028.5076904296875" cy="148.68939457702638" id="hp1" r="11">
+                            </circle>
+                            <circle class="dot" cx="1028.5076904296875" cy="148.68939457702638" id="p1" r="6.5">
+                            </circle>
+
+                            <foreignObject width="150" height="100"
+                                transform="translate(953.5076904296875 23.681394577026367)">
+
+                                <div
+                                    style="font-size: 18px;font-weight: bold;;margin:0; text-align: center;height: 100%;display: flex;justify-content: center;align-items: flex-end;">
+                                    <span>AP Tutoring</span>
+                                </div>
+
+                            </foreignObject>
+                        </g>
+                        <g class="group" id="g1">
+                            <circle class="dot2 none" cx="1155.651611328125" cy="169.62115536499024" id="p3"
+                                r="23.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="26"></animate>
+                            </circle>
+                            <circle class="dot1 none" cx="1155.651611328125" cy="169.62115536499024" id="p2"
+                                r="17.4786">
+                                <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s"
+                                    repeatCount="indefinite" to="20"></animate>
+                            </circle>
+                            <circle class="pointHover" cx="1155.651611328125" cy="169.62115536499024" id="hp1" r="11">
+                            </circle>
+                            <circle class="dot" cx="1155.651611328125" cy="169.62115536499024" id="p1" r="6.5"></circle>
+
+                            <foreignObject width="150" height="100"
+                                transform="translate(1080.651611328125 194.61315536499023)">
+
+                                <div
+                                    style="font-size: 18px;font-weight: bold;;margin:0; text-align: center;height: 100%;display: flex;justify-content: center;align-items: flex-start;">
+                                    <span>AP Exam Prep Extended</span>
+                                </div>
+
+                            </foreignObject>
+                        </g>
+                    </g>
+                </svg>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="course-info">
+                                <h3 class="goodsName"></h3>
+                                <div class="course-info-bg">
+                                    <div class="goodsInfo"></div>
+                                </div>
+                                <div>
+                                    <div class="price-box">
+
+                                    </div>
+                                    <a class="buy-link pc-buy-link" target="_blank">
+                                        <button class="btn btn-link ">
+                                            <span>Buy now</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container visible-sm visible-xs course-lyout-box">
+                <!-- <div class="course-box" *ngFor="let item of ret" [ngClass]="{'active':item?.goodsCode==roadmapPoint}">
+                    <p class="course-title">{{item.goodsName}}</p>
+                    <div class="course-info">
+                        <h3 [innerHTML]="item?.nameTitle|html"></h3>
+                        <div class="course-info-bg">
+                            <div [innerHTML]="item?.detailInfo|html"></div>
+                        </div>
+                        <div>
+                            <ng-container *ngIf="item?.promotionType==='Discount'">
+                                <div class="text-center font-bold">
+                                    <span class="font16">$&nbsp;</span><span
+                                        class="font35">{{item?.promotionPrice}}</span>
+                                </div>
+                                <div class="text-center font18" style="margin-top: -10px">
+                                    <span style="position: relative;color:#acacac;">
+                                        $&nbsp;{{item?.goodsPrice}}
+                                        <span class="line-red-landing"></span>
+                                    </span>
+                                </div>
+                            </ng-container>
+                            <ng-container *ngIf="item?.promotionType!='Discount'">
+                                <div class="text-center font-bold">
+                                    <span class="font16">$&nbsp;</span><span class="font35">{{item?.goodsPrice}}</span>
+                                </div>
+                            </ng-container> -->
+
+                <!-- <button class="btn btn-link" (onClick)="openLink(item?.shareLink)">
+                                <span>Buy now</span>
+                            </button> -->
+                <!-- </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-20 mb-60">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="note-title">Note :</div>
+                    <div class="note">Class will be arranged after payment is successfully processed.</div>
+                    <div class="note">Contact us through email
+                        <a href="mailto:support@ponddy-edu.com">support@ponddy-edu.com</a>
+                        or call +1(408) 800 7798 with any questions.</div>
+                    <div class="note">AP® and Advanced Placement® are registered trademarks of the College Board.
+                        Used with permission.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works">
+        <div class="container">
+            <div class="row text-center">
+                <h2>How it works</h2>
+                <div class="col-md-3 box">
+                    <p>Step 1</p>
+                    <img src="public/images/step-1.png">
+                    <p>Sign up for <br />
+                        a Ponddy Tutors account</p>
+                </div>
+                <div class="col-md-3 box">
+                    <p>Step 2</p>
+                    <img src="public/images/step-2.png">
+                    <p>Get your FREE <br />
+                        Assessment & Consultation.</p>
+                </div>
+                <div class="col-md-3 box">
+                    <p>Step 3</p>
+                    <img src="public/images/step-3.png">
+                    <p>Choose the package you need. <br />
+                        Dashboard>Buy Tokens.</p>
+                </div>
+                <div class="col-md-3 box">
+                    <p>Step 4</p>
+                    <img src="public/images/step-4.png">
+                    <p>We will arrange your class <br />
+                        after payment is processed.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="customize">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 hero-content">
+                    <h1>Sign up to get your free assessment and demo class</h1>
+                    <a class="rectangle-btn"
+                        href="https://auth-dev.ponddy.com/auth/register/?client_id=1bcfe1b9-8251-4532-8521-38adc2fe972c&redirect_uri=https://apis-tutors-sandbox.ponddy.com%2Flogin%2FauthSignin&next=/&"
+                        onclick="gtag('event','sign_up', { event_category:'Customize_get_started_now-'+adType, event_action:'Sign_up'});">Get
+                        started now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="scroll-content">
+        <div class="scroll-up-arrow" onclick="$('html,body').animate({ scrollTop: 0 }, 300);">
+            <img alt="scroll-up" src="public/images/scroll-up-arrow.png">
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 logos">
+                    <a href="https://www.ponddy.ai/" target="_blank">
+                        <img src="public/images/ponddy-logo.svg" class="products-logo">
+                    </a>
+                    <a href="https://stb.ponddy.com/landing/">
+                        <img src="public/images/textbook-logo.svg" class="products-logo">
+                    </a>
+                    <a href="https://reader.ponddy.com">
+                        <img src="public/images/reader-logo.svg" class="products-logo">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 navigation">
+                    <ul>
+                        <li>
+                            <a href="https://www.ponddy.ai/" target="_blank">Ponddy</a>
+                        </li>
+                        <li><a
+                                onclick="$('html,body').animate({ scrollTop: $('#works').offset().top - 70 }, 300);
+                            gtag('event', 'go_main', { 'event_category': 'Header_how_it_works-' + adType, 'event_action': 'Scroll_to_main' });
+                        gtag('event', 'view', { 'event_category': 'Landing-' + adType, 'event_label': 'How_it_works', 'ad': adType })">How
+                                it works</a></li>
+                        <li><a
+                                onclick="$('html,body').animate({ scrollTop: $('#degree').offset().top - 70 }, 300);
+                            gtag('event', 'go_course', { 'event_category': 'Header_course-' + adType, 'event_action': 'Scroll_to_course' });
+                            gtag('event', 'view', { 'event_category': 'Landing-' + adType, 'event_label': 'Course', 'ad': adType })">Course</a>
+                        </li>
+                        <li><a
+                                onclick="$('html,body').animate({ scrollTop: $('#degree').offset().top - 70 }, 300);
+                            gtag('event', 'go_pricing', { 'event_category': 'Header_pricing-' + adType, 'event_action': 'Scroll_to_pricing' });
+                            gtag('event', 'view', { 'event_category': 'Landing-' + adType, 'event_label': 'Pricing', 'ad': adType })">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row copyright">
+                © Copyright | Ponddy Education Inc. | All rights reserved
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="public/js/custom.js"></script>
+</html>
